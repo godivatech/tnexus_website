@@ -1,30 +1,30 @@
 import { motion } from 'framer-motion';
-import { Lightbulb, HardHat, Bot, Headphones } from 'lucide-react';
+import { Lightbulb, HardHat, Shield, Headphones } from 'lucide-react';
 
 const features = [
   {
     id: 1,
-    icon: Lightbulb,
-    title: 'Precision Engineering',
-    description: 'Delivering high-quality structural designs and civil engineering for manufacturing facilities.',
+    icon: Shield,
+    title: 'Quality Materials',
+    description: 'We use the strongest and most reliable materials for every structure we build.',
   },
   {
     id: 2,
     icon: HardHat,
     title: 'Expert Execution',
-    description: 'A skilled workforce of 30+ professionals ensuring projects meet the highest safety standards.',
+    description: 'Our team of 30+ skilled experts makes sure every job is done safely and correctly.',
   },
   {
     id: 3,
-    icon: Bot,
-    title: 'Modern Technology',
-    description: 'Utilizing state-of-the-art machinery and construction tech for large-scale industrial projects.',
+    icon: Lightbulb,
+    title: 'Smart Design',
+    description: 'We create smart, strong designs to ensure your building lasts for generations.',
   },
   {
     id: 4,
     icon: Headphones,
-    title: 'Reliable Support',
-    description: 'Committed to completing infrastructure projects on schedule through effective project coordination.',
+    title: 'On-Time Completion',
+    description: "We manage your project carefully to make sure it's finished exactly on time.",
   },
 ];
 

@@ -15,7 +15,7 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80',
     author: 'Senthil Kumar',
     date: 'March 10, 2025',
     title: 'Construction of a Premium Villa Project in Chennai',
@@ -25,7 +25,7 @@ const blogPosts: BlogPost[] = [
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80',
     author: 'Karthik Nathan',
     date: 'Feb 12, 2024',
     title: 'Building Resilient Infrastructure for Modern Developments in Tamil Nadu',
@@ -92,7 +92,7 @@ const Blog = () => {
             >
               {/* Image */}
               <div className="relative h-[250px] overflow-hidden">
-                <img 
+                <img
                   src={post.image}
                   alt={post.title}
                   className="w-full h-full object-cover"
@@ -128,8 +128,8 @@ const Blog = () => {
                     <Clock size={14} />
                     {post.readTime}
                   </div>
-                  <a 
-                    href="#" 
+                  <a
+                    href="#"
                     className="w-8 h-8 bg-gray-100 flex items-center justify-center text-dark hover:bg-orange-500 hover:text-white transition-all"
                   >
                     <ArrowRight size={14} />
