@@ -106,11 +106,6 @@ const Footer = () => {
                   Tamil Nadu, India
                 </p>
               </div>
-              <div>
-                <h4 className="text-xl font-bold mb-6 mt-8 lg:mt-0 pt-4">Email Address</h4>
-                <p className="text-gray-400 text-sm mb-2">Interested in working with us?</p>
-                <a href="mailto:support.tnexus@gmail.com" className="text-gray-400 text-sm hover:text-orange-500 transition-colors break-words">support.tnexus@gmail.com</a>
-              </div>
             </motion.div>
 
             {/* Column 4: Phone Number & Follow Us */}
