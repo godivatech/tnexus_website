@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 18 96% 46%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 10%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 18 96% 46%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 18 96% 46%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 26%;
+    --sidebar-primary: 18 96% 46%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 96%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 0 0% 91%;
+    --sidebar-ring: 18 96% 46%;
+    
+    /* Custom TNexus Colors */
+    --orange-primary: #E85D04;
+    --orange-dark: #D84315;
+    --orange-light: #FF8A50;
+    --dark-bg: #1a1a1a;
+    --dark-footer: #111111;
+    --text-dark: #1a1a1a;
+    --text-gray: #666666;
+    --text-light: #999999;
+    --bg-light: #f5f5f5;
+    --bg-white: #ffffff;
+    --border-color: #e5e5e5;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+  }
+}
+
+@layer components {
+  .container-tnexus {
+    @apply max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 xl:px-12;
+  }
+  
+  .btn-primary {
+    @apply bg-orange-500 text-white px-6 py-3 rounded-sm font-medium 
+           transition-all duration-300 hover:bg-orange-600 
+           flex items-center gap-2;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-white text-white px-6 py-3 
+           rounded-sm font-medium transition-all duration-300 
+           hover:bg-white hover:text-dark;
+  }
+  
+  .btn-outline {
+    @apply bg-transparent border border-gray-300 text-dark px-6 py-3 
+           rounded-sm font-medium transition-all duration-300 
+           hover:border-orange-500 hover:text-orange-500;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-dark leading-tight;
+  }
+  
+  .section-subtitle {
+    @apply text-orange-500 text-sm font-semibold uppercase tracking-wider mb-2;
+  }
+  
+  .text-gradient {
+    @apply bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent;
+  }
+  
+  .card-shadow {
+    @apply shadow-card hover:shadow-hover transition-shadow duration-300;
+  }
+  
+  .nav-link {
+    @apply text-dark hover:text-orange-500 transition-colors duration-300 
+           font-medium text-sm;
+  }
+  
+  .nav-link-active {
+    @apply text-orange-500;
+  }
+  
+  .feature-card {
+    @apply bg-white p-8 relative overflow-hidden transition-all duration-300;
+  }
+  
+  .feature-card::before {
+    content: '';
+    @apply absolute top-0 right-0 w-20 h-20 bg-orange-500 opacity-10 
+           transform translate-x-10 -translate-y-10 rotate-45;
+  }
+  
+  .feature-card:hover {
+    @apply bg-orange-500;
+  }
+  
+  .feature-card:hover * {
+    @apply text-white;
+  }
+  
+  .feature-card:hover .feature-icon {
+    @apply text-white;
+  }
+  
+  .feature-icon {
+    @apply text-orange-500 text-4xl mb-4 transition-colors duration-300;
+  }
+  
+  .stat-number {
+    @apply text-5xl md:text-6xl font-bold text-transparent bg-clip-text 
+           bg-gradient-to-b from-gray-400 to-gray-200;
+  }
+  
+  .service-tab {
+    @apply px-6 py-4 text-left font-medium transition-all duration-300 
+           border-l-4 border-transparent hover:bg-gray-50;
+  }
+  
+  .service-tab.active {
+    @apply bg-orange-500 text-white border-orange-700;
+  }
+  
+  .process-card {
+    @apply bg-white p-8 relative;
+  }
+  
+  .process-number {
+    @apply absolute top-4 right-4 text-7xl font-bold text-gray-100 
+           select-none pointer-events-none;
+  }
+  
+  .project-card {
+    @apply relative overflow-hidden;
+  }
+  
+  .project-card img {
+    @apply transition-transform duration-500;
+  }
+  
+  .project-card:hover img {
+    @apply scale-110;
+  }
+  
+  .project-overlay {
+    @apply absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent 
+           opacity-100 transition-opacity duration-300;
+  }
+  
+  .team-card {
+    @apply relative overflow-hidden;
+  }
+  
+  .team-card .team-info {
+    @apply absolute bottom-0 left-0 right-0 bg-white p-4 text-center 
+           transform translate-y-2 transition-transform duration-300;
+  }
+  
+  .team-card:hover .team-info {
+    @apply translate-y-0;
+  }
+  
+  .testimonial-card {
+    @apply bg-white p-6 rounded-lg shadow-card;
+  }
+  
+  .partner-logo {
+    @apply grayscale hover:grayscale-0 transition-all duration-300 
+           opacity-60 hover:opacity-100;
+  }
+  
+  .blog-card {
+    @apply bg-white overflow-hidden shadow-card hover:shadow-hover 
+           transition-shadow duration-300;
+  }
+  
+  .blog-card img {
+    @apply transition-transform duration-500 hover:scale-105;
+  }
+  
+  .form-input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-sm 
+           focus:outline-none focus:border-orange-500 transition-colors duration-300
+           bg-white text-dark placeholder:text-gray-400;
+  }
+  
+  .form-input-dark {
+    @apply w-full px-4 py-3 border border-gray-600 rounded-sm 
+           focus:outline-none focus:border-orange-500 transition-colors duration-300
+           bg-dark-100 text-white placeholder:text-gray-500;
+  }
+  
+  .scroll-to-top {
+    @apply fixed bottom-6 right-6 w-10 h-10 bg-orange-500 text-white 
+           rounded-sm flex items-center justify-center cursor-pointer 
+           transition-all duration-300 hover:bg-orange-600 z-50;
+  }
+  
+  .floating-btn {
+    @apply fixed right-6 w-12 h-12 rounded-full flex items-center justify-center 
+           cursor-pointer transition-all duration-300 shadow-lg z-50;
+  }
+  
+  .clip-diagonal {
+    clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 40px 100%, 0 calc(100% - 40px));
+  }
+  
+  .clip-diagonal-reverse {
+    clip-path: polygon(40px 0, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%, 0 40px);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+}
