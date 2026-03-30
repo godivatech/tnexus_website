@@ -1,4 +1,4 @@
 export const FEATURE_FLAGS = {
   aboutUnderDevelopment: true,
-  servicesUnderDevelopment: false,
+  servicesUnderDevelopment: true,
 };
