@@ -44,8 +44,8 @@ const Navbar = () => {
             <span className="text-orange-500">Email:</span>
             support.tnexus@gmail.com
             <span className="text-orange-500 ml-4">Call:</span>
-            <a href="tel:9944325345" className="hover:text-orange-500 transition-colors">
-              9944325345
+            <a href="tel:6369361053" className="hover:text-orange-500 transition-colors">
+              6369361053
             </a>
           </div>
           <div className="flex items-center gap-4">

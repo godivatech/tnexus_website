@@ -18,21 +18,21 @@ const ContactPage = () => {
   const offices = [
     {
       city: 'Madurai',
-      phone: '+91 99443 25345',
+      phone: '+91 63693 61053',
       email: 'info@tnexusconstructions.com',
       hours: 'Mon - Sat 10:00 - 18:00',
       image: 'https://images.unsplash.com/photo-1590644365607-1c5a519a7a37?w=400&q=80',
     },
     {
       city: 'Chennai',
-      phone: '+91 99443 25345',
+      phone: '+91 63693 61053',
       email: 'info@tnexusconstructions.com',
       hours: 'Mon - Sat 10:00 - 18:00',
       image: 'https://images.unsplash.com/photo-1582512355410-09699696c738?w=400&q=80',
     },
     {
       city: 'Coimbatore',
-      phone: '+91 99443 25345',
+      phone: '+91 63693 61053',
       email: 'info@tnexusconstructions.com',
       hours: 'Mon - Sat 10:00 - 18:00',
       image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=400&q=80',
@@ -88,7 +88,7 @@ const ContactPage = () => {
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <Phone size={20} className="text-orange-500" />
-                  <span>+91 99443 25345</span>
+                  <span>+91 63693 61053</span>
                 </div>
                 <div className="flex items-center gap-4">
                   <Mail size={20} className="text-orange-500" />
