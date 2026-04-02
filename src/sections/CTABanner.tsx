@@ -41,7 +41,7 @@ const CTABanner = () => {
               </p>
               <a 
                 href="/contact" 
-                className="bg-background text-foreground px-8 py-4 font-medium inline-flex items-center gap-2 hover:bg-dark hover:text-white transition-all duration-300"
+                className="bg-accent text-accent-foreground px-8 py-4 font-medium inline-flex items-center gap-2 hover:brightness-110 transition-all duration-300"
               >
                 Consultation & Quote
                 <ArrowRight size={18} />

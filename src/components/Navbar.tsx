@@ -111,7 +111,7 @@ const Navbar = () => {
             {/* CTA Button */}
             <Link
               to="/contact"
-              className="hidden md:flex btn-primary"
+              className="hidden md:flex btn-accent"
             >
               Get In Touch
               <ArrowRight size={18} />

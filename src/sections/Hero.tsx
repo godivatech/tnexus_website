@@ -101,7 +101,7 @@ const Hero = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.5 }}
               >
-                <a href="#about" className="btn-primary">
+                <a href="#about" className="btn-accent">
                   Explore More
                   <ArrowRight size={18} />
                 </a>

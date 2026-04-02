@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-background">
       <div className="container-tnexus">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}

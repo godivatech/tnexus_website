@@ -42,7 +42,7 @@ const ContactPage = () => {
   return (
     <main>
       {/* Page Header */}
-      <section className="relative bg-orange-500 py-24 overflow-hidden">
+      <section className="relative bg-primary py-24 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute bottom-0 left-0 w-full h-32 bg-dark opacity-20" style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0)' }}></div>
         </div>
@@ -68,7 +68,7 @@ const ContactPage = () => {
       </section>
 
       {/* Main Offices */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-background">
         <div className="container-tnexus">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
             {/* Left - Dark Card */}
@@ -79,23 +79,23 @@ const ContactPage = () => {
               transition={{ duration: 0.6 }}
               className="bg-dark p-12 text-white"
             >
-              <div className="w-16 h-16 bg-orange-500 flex items-center justify-center mb-6">
+              <div className="w-16 h-16 bg-primary flex items-center justify-center mb-6 text-primary-foreground">
                 <MapPin size={32} />
               </div>
               <h3 className="text-2xl font-bold mb-2">Main Offices</h3>
-              <p className="text-gray-400 mb-8">Mon - Sat 10:00 - 18:00</p>
+              <p className="text-white/60 mb-8">Mon - Sat 10:00 - 18:00</p>
 
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                  <Phone size={20} className="text-orange-500" />
+                  <Phone size={20} className="text-primary" />
                   <span>+91 63693 61053</span>
                 </div>
                 <div className="flex items-center gap-4">
-                  <Mail size={20} className="text-orange-500" />
+                  <Mail size={20} className="text-primary" />
                   <span>info@tnexusconstructions.com</span>
                 </div>
                 <div className="flex items-center gap-4">
-                  <MapPin size={20} className="text-orange-500" />
+                  <MapPin size={20} className="text-primary" />
                   <span>123, TNexus Tower, Anna Nagar,<br />Madurai, Tamil Nadu 625020</span>
                 </div>
               </div>
@@ -124,7 +124,7 @@ const ContactPage = () => {
                   <a
                     key={index}
                     href="#"
-                    className="w-10 h-10 bg-white/90 flex items-center justify-center text-dark hover:bg-orange-500 hover:text-white transition-all"
+                    className="w-10 h-10 bg-white/90 flex items-center justify-center text-dark hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <Icon size={16} />
                   </a>
@@ -136,7 +136,7 @@ const ContactPage = () => {
       </section>
 
       {/* Global Offices */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-muted/30">
         <div className="container-tnexus">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -146,7 +146,7 @@ const ContactPage = () => {
             className="text-center mb-12"
           >
             <span className="section-subtitle flex items-center justify-center gap-2">
-              <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+              <span className="w-2 h-2 bg-primary rounded-full"></span>
               BRANCH
             </span>
             <h2 className="section-title mt-4">Global Office</h2>
@@ -160,24 +160,24 @@ const ContactPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
-                className="bg-white p-6 shadow-card hover:shadow-hover transition-shadow"
+                className="bg-background p-6 shadow-card hover:shadow-hover transition-shadow"
               >
-                <h3 className="text-xl font-bold text-dark mb-4">{office.city}</h3>
-                <div className="space-y-3 text-sm text-gray-600 mb-6">
+                <h3 className="text-xl font-bold text-foreground mb-4">{office.city}</h3>
+                <div className="space-y-3 text-sm text-muted-foreground mb-6">
                   <div className="flex items-center gap-3">
-                    <Phone size={14} className="text-orange-500" />
+                    <Phone size={14} className="text-primary" />
                     {office.phone}
                   </div>
                   <div className="flex items-center gap-3">
-                    <Mail size={14} className="text-orange-500" />
+                    <Mail size={14} className="text-primary" />
                     {office.email}
                   </div>
                   <div className="flex items-center gap-3">
-                    <Clock size={14} className="text-orange-500" />
+                    <Clock size={14} className="text-primary" />
                     {office.hours}
                   </div>
                 </div>
-                <button className="w-full border border-gray-300 py-3 flex items-center justify-center gap-2 text-sm font-medium hover:border-orange-500 hover:text-orange-500 transition-all">
+                <button className="w-full border border-border py-3 flex items-center justify-center gap-2 text-sm font-medium hover:border-primary hover:text-primary transition-all">
                   View Location
                   <ArrowRight size={14} />
                 </button>
@@ -193,7 +193,7 @@ const ContactPage = () => {
       {/* Contact Form with Map */}
       <section className="relative">
         {/* Map Background */}
-        <div className="h-[600px] bg-gray-200">
+        <div className="h-[600px] bg-muted">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62860.639148688!2d78.0792384!3d9.9252007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c58242145821%3A0xbe0908384882a275!2sMadurai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1711530000000!5m2!1sen!2sin"
             width="100%"
@@ -213,11 +213,11 @@ const ContactPage = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="bg-white p-8 md:p-12 max-w-2xl w-full shadow-2xl"
+            className="bg-background p-8 md:p-12 max-w-2xl w-full shadow-2xl border border-border"
           >
             <div className="text-center mb-8">
-              <h3 className="text-3xl font-bold text-dark mb-2">Get in Touch</h3>
-              <p className="text-gray-600">
+              <h3 className="text-3xl font-bold text-foreground mb-2">Get in Touch</h3>
+              <p className="text-muted-foreground">
                 Ready to start your next construction project? Our team is here to help you every step of the way. Reach out to us for any inquiries.
               </p>
             </div>
@@ -253,7 +253,7 @@ const ContactPage = () => {
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 className="form-input resize-none"
               />
-              <button type="submit" className="btn-primary w-full justify-center">
+              <button type="submit" className="btn-accent w-full justify-center">
                 Send Message
                 <ArrowRight size={18} />
               </button>

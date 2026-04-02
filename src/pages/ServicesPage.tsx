@@ -20,7 +20,7 @@ const services = [
     id: 3,
     title: 'Premium Apartments',
     description: 'Expertly designed multi-family residential complexes that offer modern living experiences.',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1586528116311-ad86d5259952?w=600&q=80',
     number: '03',
   },
   {
@@ -66,7 +66,7 @@ const ServicesPage = () => {
   return (
     <main>
       {/* Page Header */}
-      <section className="relative bg-orange-500 py-24 overflow-hidden">
+      <section className="relative bg-primary py-24 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute bottom-0 left-0 w-full h-32 bg-dark opacity-20" style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0)' }}></div>
         </div>
@@ -92,7 +92,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-background">
         <div className="container-tnexus">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
@@ -110,21 +110,21 @@ const ServicesPage = () => {
                     alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-colors" />
+                  <div className="absolute inset-0 bg-dark/40 group-hover:bg-dark/60 transition-colors" />
                 </div>
-                <div className="bg-white p-6 shadow-card group-hover:shadow-hover transition-shadow relative">
-                  <span className="absolute -top-8 right-4 text-6xl font-bold text-gray-100 select-none">
+                <div className="bg-background p-6 shadow-card group-hover:shadow-hover transition-shadow relative border border-border group-hover:border-primary">
+                  <span className="absolute -top-8 right-4 text-6xl font-bold text-muted/20 select-none">
                     {service.number}
                   </span>
-                  <h3 className="text-lg font-bold text-dark mb-2 group-hover:text-orange-500 transition-colors relative z-10">
+                  <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors relative z-10">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4 relative z-10">
+                  <p className="text-muted-foreground text-sm mb-4 relative z-10">
                     {service.description}
                   </p>
-                  <a href="#" className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-orange-500 transition-colors relative z-10">
+                  <a href="#" className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative z-10">
                     View Details
-                    <span className="w-8 h-8 bg-gray-100 flex items-center justify-center group-hover:bg-orange-500 group-hover:text-white transition-all">
+                    <span className="w-8 h-8 bg-muted flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-all">
                       <ArrowUpRight size={14} />
                     </span>
                   </a>
@@ -136,7 +136,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-orange-500 relative overflow-hidden">
+      <section className="py-20 bg-primary relative overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&q=80"
@@ -169,14 +169,14 @@ const ServicesPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white p-6 flex gap-4"
+                className="bg-background p-6 flex gap-4"
               >
-                <div className="w-12 h-12 bg-orange-100 flex items-center justify-center flex-shrink-0">
-                  <span className="text-orange-500 font-bold">{String(index + 1).padStart(2, '0')}</span>
+                <div className="w-12 h-12 bg-primary/10 flex items-center justify-center flex-shrink-0">
+                  <span className="text-primary font-bold">{String(index + 1).padStart(2, '0')}</span>
                 </div>
                 <div>
-                  <h4 className="font-bold text-dark mb-1">{benefit.title}</h4>
-                  <p className="text-gray-600 text-sm">{benefit.description}</p>
+                  <h4 className="font-bold text-foreground mb-1">{benefit.title}</h4>
+                  <p className="text-muted-foreground text-sm">{benefit.description}</p>
                 </div>
               </motion.div>
             ))}
@@ -185,7 +185,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Work Process */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-muted/30">
         <div className="container-tnexus">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <motion.div
@@ -196,7 +196,7 @@ const ServicesPage = () => {
               className="lg:col-span-2"
             >
               <span className="section-subtitle flex items-center gap-2 mb-4">
-                <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+                <span className="w-2 h-2 bg-primary rounded-full"></span>
                 WORK PROCESS
               </span>
               <h2 className="section-title mb-12">Project implementation process</h2>
@@ -209,13 +209,13 @@ const ServicesPage = () => {
                   { step: '04', title: 'Final Handover', description: 'Thorough quality audit and project delivery within the committed timeline.' },
                 ].map((item, index) => (
                   <div key={index} className="flex gap-4">
-                    <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                    <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold flex-shrink-0">
                       {item.step}
                     </div>
                     <div>
-                      <span className="text-gray-400 text-xs uppercase tracking-wider">STEP</span>
-                      <h4 className="font-bold text-dark mb-2">{item.title}</h4>
-                      <p className="text-gray-600 text-sm">{item.description}</p>
+                      <span className="text-muted-foreground text-xs uppercase tracking-wider">STEP</span>
+                      <h4 className="font-bold text-foreground mb-2">{item.title}</h4>
+                      <p className="text-muted-foreground text-sm">{item.description}</p>
                     </div>
                   </div>
                 ))}
@@ -228,10 +228,10 @@ const ServicesPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-white p-8 shadow-card"
+              className="bg-background p-8 shadow-card border border-border"
             >
-              <h3 className="text-xl font-bold text-dark mb-2">Have any Question?</h3>
-              <p className="text-gray-600 text-sm mb-6">
+              <h3 className="text-xl font-bold text-foreground mb-2">Have any Question?</h3>
+              <p className="text-muted-foreground text-sm mb-6">
                 Our experts are ready to assist you with your industrial or residential construction needs. Get in touch for a free consultation.
               </p>
               <form className="space-y-4">
@@ -239,7 +239,7 @@ const ServicesPage = () => {
                 <input type="email" placeholder="Email Address" className="form-input" />
                 <input type="text" placeholder="Your Inquiry" className="form-input" />
                 <textarea placeholder="Write Here..." rows={3} className="form-input resize-none" />
-                <button type="submit" className="btn-primary w-full justify-center">
+                <button type="submit" className="btn-accent w-full justify-center">
                   Send Message
                   <ArrowRight size={18} />
                 </button>
@@ -250,7 +250,7 @@ const ServicesPage = () => {
       </section>
 
       {/* Pricing Plans */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-background">
         <div className="container-tnexus">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -260,7 +260,7 @@ const ServicesPage = () => {
             className="text-center mb-12"
           >
             <span className="section-subtitle flex items-center justify-center gap-2">
-              <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+              <span className="w-2 h-2 bg-primary rounded-full"></span>
               OUR SERVICE COMMITMENT
             </span>
             <h2 className="section-title mt-4">Why Choose TNexus Constructions?</h2>
@@ -280,26 +280,26 @@ const ServicesPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
-                className={`bg-white p-8 ${plan.popular ? 'shadow-hover border-2 border-orange-500' : 'shadow-card'} relative`}
+                className={`bg-background p-8 ${plan.popular ? 'shadow-hover border-2 border-primary' : 'shadow-card border border-border'} relative`}
               >
                 {plan.popular && (
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-dark text-white px-4 py-1 text-sm font-medium">
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-accent text-accent-foreground px-4 py-1 text-sm font-medium">
                     Core Strength
                   </div>
                 )}
-                <h4 className="font-bold text-dark text-xl mb-4">{plan.name}</h4>
-                <p className="text-gray-600 text-sm mb-8 leading-relaxed">{plan.description}</p>
+                <h4 className="font-bold text-foreground text-xl mb-4">{plan.name}</h4>
+                <p className="text-muted-foreground text-sm mb-8 leading-relaxed">{plan.description}</p>
 
                 <ul className="space-y-4 mb-10">
                   {plan.features.map((feature, i) => (
                     <li key={i} className="flex items-center gap-3 text-sm">
-                      <span className="text-orange-500 font-bold">✓</span>
-                      <span className="text-gray-700">{feature}</span>
+                      <span className="text-primary font-bold">✓</span>
+                      <span className="text-foreground/80">{feature}</span>
                     </li>
                   ))}
                 </ul>
 
-                <button className={`w-full py-4 font-bold uppercase tracking-wider transition-all ${plan.popular ? 'bg-orange-500 text-white hover:bg-orange-600' : 'border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white'}`}>
+                <button className={`w-full py-4 font-bold uppercase tracking-wider transition-all ${plan.popular ? 'bg-primary text-primary-foreground hover:bg-primary-hover' : 'border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground'}`}>
                   Get a Quote →
                 </button>
               </motion.div>

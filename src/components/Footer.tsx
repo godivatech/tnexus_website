@@ -66,7 +66,7 @@ const Footer = () => {
               <p className="text-white/60 text-sm leading-relaxed mb-8">
                 TNexus Constructions stands for quality, innovation, and reliability. We are committed to building a better future through exceptional infrastructure.
               </p>
-              <div className="font-bold text-4xl tracking-wide text-transparent" style={{ WebkitTextStroke: '1px hsl(var(--primary))' }}>
+              <div className="font-bold text-4xl tracking-wide text-transparent" style={{ WebkitTextStroke: '1px #063d6b' }}>
                 Since 2020
               </div>
             </motion.div>

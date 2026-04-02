@@ -22,7 +22,7 @@ const AboutPage = () => {
   return (
     <main>
       {/* Page Header */}
-      <section className="relative bg-orange-500 py-24 overflow-hidden">
+      <section className="relative bg-primary py-24 overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute bottom-0 left-0 w-full h-32 bg-dark opacity-20" style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0)' }}></div>
         </div>
@@ -48,7 +48,7 @@ const AboutPage = () => {
       </section>
 
       {/* Welcome Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-background">
         <div className="container-tnexus">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -58,10 +58,10 @@ const AboutPage = () => {
             className="text-center max-w-4xl mx-auto"
           >
             <span className="section-subtitle flex items-center justify-center gap-2">
-              <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+              <span className="w-2 h-2 bg-primary rounded-full"></span>
               ABOUT TNEXUS
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-dark mt-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4">
               Providing end-to-end best construction solutions across Tamil Nadu since 2020.
             </h2>
           </motion.div>
@@ -81,11 +81,11 @@ const AboutPage = () => {
                 className="w-40 h-32 object-cover"
               />
               <div>
-                <h3 className="text-xl font-bold text-dark mb-3">Our Mission</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <h3 className="text-xl font-bold text-foreground mb-3">Our Mission</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   To deliver high-quality, sustainable industrial and residential infrastructure using advanced construction methodologies and engineering excellence.
                 </p>
-                <div className="w-12 h-0.5 bg-orange-500 mt-4" />
+                <div className="w-12 h-0.5 bg-primary mt-4" />
               </div>
             </motion.div>
 
@@ -102,11 +102,11 @@ const AboutPage = () => {
                 className="w-40 h-32 object-cover"
               />
               <div>
-                <h3 className="text-xl font-bold text-dark mb-3">Our Vision</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <h3 className="text-xl font-bold text-foreground mb-3">Our Vision</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   To be the most trusted construction partner in South India, recognized for our commitment to quality, safety, and timely project delivery.
                 </p>
-                <div className="w-12 h-0.5 bg-orange-500 mt-4" />
+                <div className="w-12 h-0.5 bg-primary mt-4" />
               </div>
             </motion.div>
           </div>
@@ -114,7 +114,7 @@ const AboutPage = () => {
       </section>
 
       {/* Company Journey */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-muted/30">
         <div className="container-tnexus">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -124,7 +124,7 @@ const AboutPage = () => {
             className="text-center mb-12"
           >
             <span className="section-subtitle flex items-center justify-center gap-2">
-              <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+              <span className="w-2 h-2 bg-primary rounded-full"></span>
               OUR HISTORY
             </span>
             <h2 className="section-title mt-4">Company Journey</h2>
@@ -137,8 +137,8 @@ const AboutPage = () => {
                 key={index}
                 onClick={() => setActiveTab(index)}
                 className={`px-6 py-3 font-medium transition-all duration-300 ${activeTab === index
-                  ? 'bg-orange-500 text-white'
-                  : 'bg-white text-gray-600 hover:bg-gray-100'
+                  ? 'bg-primary text-primary-foreground'
+                  : 'bg-background text-muted-foreground hover:bg-muted'
                   }`}
               >
                 {tab.year}
@@ -152,7 +152,7 @@ const AboutPage = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
-            className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-white p-8"
+            className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-background p-8"
           >
             <img
               src={timelineTabs[activeTab].image}
@@ -160,17 +160,17 @@ const AboutPage = () => {
               className="w-full h-[350px] object-cover"
             />
             <div>
-              <h3 className="text-2xl font-bold text-dark mb-4">{timelineTabs[activeTab].title}</h3>
-              <p className="text-gray-600 leading-relaxed mb-6">
+              <h3 className="text-2xl font-bold text-foreground mb-4">{timelineTabs[activeTab].title}</h3>
+              <p className="text-muted-foreground leading-relaxed mb-6">
                 From our inception in Madurai, TNexus has grown consistently by delivering exceptional residential villas, apartments, and modern commercial spaces.
               </p>
               <ul className="space-y-3">
-                <li className="flex items-center gap-3 text-gray-700">
-                  <span className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
+                <li className="flex items-center gap-3 text-foreground/80">
+                  <span className="w-1.5 h-1.5 bg-primary rounded-full" />
                   Quality Control System
                 </li>
-                <li className="flex items-center gap-3 text-gray-700">
-                  <span className="w-1.5 h-1.5 bg-orange-500 rounded-full" />
+                <li className="flex items-center gap-3 text-foreground/80">
+                  <span className="w-1.5 h-1.5 bg-primary rounded-full" />
                   Building Quality Industrial
                 </li>
               </ul>
@@ -180,7 +180,7 @@ const AboutPage = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-background">
         <div className="container-tnexus">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
             <motion.div
@@ -190,7 +190,7 @@ const AboutPage = () => {
               transition={{ duration: 0.5 }}
             >
               <span className="section-subtitle flex items-center gap-2">
-                <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+                <span className="w-2 h-2 bg-primary rounded-full"></span>
                 ENGINEER
               </span>
               <h2 className="section-title mt-4">The Best industry experts</h2>
@@ -202,7 +202,7 @@ const AboutPage = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="btn-primary mt-4 md:mt-0 inline-flex"
+              className="btn-accent mt-4 md:mt-0 inline-flex"
             >
               Become a Member
               <ArrowRight size={18} />
@@ -226,21 +226,21 @@ const AboutPage = () => {
                     className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute top-4 right-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <a href="#" className="w-8 h-8 bg-orange-500 flex items-center justify-center text-white">
+                    <a href="#" className="w-8 h-8 bg-primary flex items-center justify-center text-primary-foreground">
                       <Facebook size={14} />
                     </a>
-                    <a href="#" className="w-8 h-8 bg-orange-500 flex items-center justify-center text-white">
+                    <a href="#" className="w-8 h-8 bg-primary flex items-center justify-center text-primary-foreground">
                       <Twitter size={14} />
                     </a>
-                    <a href="#" className="w-8 h-8 bg-orange-500 flex items-center justify-center text-white">
+                    <a href="#" className="w-8 h-8 bg-primary flex items-center justify-center text-primary-foreground">
                       <Linkedin size={14} />
                     </a>
                   </div>
                 </div>
-                <div className="bg-white p-4 text-center shadow-lg">
-                  <h3 className="font-bold text-dark">{member.name}</h3>
-                  <p className="text-gray-600 text-sm">{member.role}</p>
-                  <div className="w-12 h-0.5 bg-orange-500 mx-auto mt-3" />
+                <div className="bg-background p-4 text-center shadow-lg">
+                  <h3 className="font-bold text-foreground">{member.name}</h3>
+                  <p className="text-muted-foreground text-sm">{member.role}</p>
+                  <div className="w-12 h-0.5 bg-primary mx-auto mt-3" />
                 </div>
               </motion.div>
             ))}
@@ -249,7 +249,7 @@ const AboutPage = () => {
       </section>
 
       {/* Achievement Stats */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-muted/30">
         <div className="container-tnexus">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -259,7 +259,7 @@ const AboutPage = () => {
             className="text-center mb-12"
           >
             <span className="section-subtitle flex items-center justify-center gap-2">
-              <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+              <span className="w-2 h-2 bg-primary rounded-full"></span>
               ACHIEVEMENT
             </span>
             <h2 className="section-title mt-4">Company Achievement</h2>
@@ -281,7 +281,7 @@ const AboutPage = () => {
                 className="text-center"
               >
                 <div className="stat-number">{stat.value}</div>
-                <p className="text-gray-600 mt-2">{stat.label}</p>
+                <p className="text-muted-foreground mt-2">{stat.label}</p>
               </motion.div>
             ))}
           </div>
