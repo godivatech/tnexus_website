@@ -27,7 +27,7 @@ const processes = [
 
 const Process = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-muted/30">
       <div className="container-tnexus">
         {/* Header */}
         <motion.div
@@ -38,7 +38,7 @@ const Process = () => {
           className="text-center mb-16"
         >
           <span className="section-subtitle flex items-center justify-center gap-2">
-            <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+            <span className="w-2 h-2 bg-primary rounded-full"></span>
             WORK PROCESS
           </span>
         </motion.div>
@@ -57,20 +57,20 @@ const Process = () => {
               <span className="process-number">{process.number}</span>
               <div className="relative z-10">
                 <process.icon 
-                  className="text-orange-500 mb-6" 
+                  className="text-primary mb-6" 
                   size={48} 
                   strokeWidth={1.5}
                 />
-                <h3 className="text-xl font-bold text-dark mb-4">
+                <h3 className="text-xl font-bold text-foreground mb-4">
                   {process.title}
                 </h3>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-muted-foreground text-sm leading-relaxed">
                   {process.description}
                 </p>
               </div>
               
               {/* Bottom Line */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-orange-500 to-orange-300" />
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/60" />
             </motion.div>
           ))}
         </div>

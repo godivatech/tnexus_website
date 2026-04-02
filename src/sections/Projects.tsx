@@ -64,7 +64,7 @@ const Projects = () => {
   }, [emblaApi]);
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-background">
       <div className="container-tnexus">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
@@ -75,7 +75,7 @@ const Projects = () => {
             transition={{ duration: 0.5 }}
           >
             <span className="section-subtitle flex items-center gap-2">
-              <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+              <span className="w-2 h-2 bg-primary rounded-full"></span>
               RECENT WORK
             </span>
             <h2 className="section-title mt-4">
@@ -93,13 +93,13 @@ const Projects = () => {
           >
             <button
               onClick={scrollPrev}
-              className="w-12 h-12 border border-gray-300 flex items-center justify-center text-dark hover:bg-orange-500 hover:border-orange-500 hover:text-white transition-all duration-300"
+              className="w-12 h-12 border border-border flex items-center justify-center text-foreground hover:bg-primary hover:border-primary hover:text-primary-foreground transition-all duration-300"
             >
               <ChevronLeft size={24} />
             </button>
             <button
               onClick={scrollNext}
-              className="w-12 h-12 bg-orange-500 flex items-center justify-center text-white hover:bg-orange-600 transition-colors"
+              className="w-12 h-12 bg-primary flex items-center justify-center text-primary-foreground hover:bg-primary-hover transition-colors"
             >
               <ChevronRight size={24} />
             </button>
@@ -127,7 +127,7 @@ const Projects = () => {
                 />
                 <div className="project-overlay" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
-                  <span className="inline-block px-3 py-1 bg-orange-500 text-white text-xs font-medium rounded-full mb-3">
+                  <span className="inline-block px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full mb-3">
                     {project.category}
                   </span>
                   <h3 className="text-xl font-bold text-white">

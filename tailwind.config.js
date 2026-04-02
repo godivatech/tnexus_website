@@ -13,6 +13,7 @@ module.exports = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -48,26 +49,9 @@ module.exports = {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        orange: {
-          DEFAULT: "#E85D04",
-          50: "#FFF3E0",
-          100: "#FFE0B2",
-          200: "#FFCC80",
-          300: "#FFB74D",
-          400: "#FFA726",
-          500: "#E85D04",
-          600: "#D84315",
-          700: "#BF360C",
-          800: "#A52714",
-          900: "#870000",
-        },
         dark: {
-          DEFAULT: "#1a1a1a",
-          100: "#2d2d2d",
-          200: "#404040",
-          300: "#525252",
-          400: "#666666",
-          500: "#808080",
+          DEFAULT: "hsl(var(--dark))",
+          muted: "hsl(var(--dark-muted))",
         },
       },
       borderRadius: {

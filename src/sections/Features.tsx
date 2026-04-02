@@ -30,7 +30,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-muted/30">
       <div className="container-tnexus">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
@@ -45,16 +45,16 @@ const Features = () => {
               <div className="feature-card h-full cursor-pointer">
                 <div className="relative z-10">
                   <feature.icon className="feature-icon" size={48} strokeWidth={1.5} />
-                  <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-white transition-colors">
+                  <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary-foreground transition-colors">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed group-hover:text-white/90 transition-colors">
+                  <p className="text-muted-foreground text-sm leading-relaxed group-hover:text-primary-foreground/90 transition-colors">
                     {feature.description}
                   </p>
                 </div>
 
                 {/* Hover Background */}
-                <div className="absolute inset-0 bg-orange-500 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
+                <div className="absolute inset-0 bg-primary transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
               </div>
             </motion.div>
           ))}

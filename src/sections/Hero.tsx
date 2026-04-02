@@ -106,10 +106,10 @@ const Hero = () => {
                   <ArrowRight size={18} />
                 </a>
                 <button
-                  className="w-14 h-14 rounded-full bg-orange-500 flex items-center justify-center text-white hover:bg-orange-600 transition-colors"
+                  className="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-primary-foreground hover:bg-primary-hover transition-colors"
                   onClick={() => setIsAutoPlaying(!isAutoPlaying)}
                 >
-                  <Play size={20} fill="white" />
+                  <Play size={20} fill="currentColor" />
                 </button>
               </motion.div>
             </motion.div>
@@ -121,13 +121,13 @@ const Hero = () => {
       <div className="absolute right-8 top-1/2 -translate-y-1/2 z-20 flex flex-col gap-2">
         <button
           onClick={prevSlide}
-          className="w-12 h-12 bg-orange-500 flex items-center justify-center text-white hover:bg-orange-600 transition-colors"
+          className="w-12 h-12 bg-primary flex items-center justify-center text-primary-foreground hover:bg-primary-hover transition-colors"
         >
           <ChevronLeft size={24} />
         </button>
         <button
           onClick={nextSlide}
-          className="w-12 h-12 bg-orange-500 flex items-center justify-center text-white hover:bg-orange-600 transition-colors"
+          className="w-12 h-12 bg-primary flex items-center justify-center text-primary-foreground hover:bg-primary-hover transition-colors"
         >
           <ChevronRight size={24} />
         </button>
@@ -139,7 +139,7 @@ const Hero = () => {
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-orange-500 w-8' : 'bg-white/50 hover:bg-white'
+            className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide ? 'bg-primary w-8' : 'bg-white/50 hover:bg-white'
               }`}
           />
         ))}
@@ -147,7 +147,7 @@ const Hero = () => {
 
       {/* Decorative Element */}
       <div className="absolute bottom-0 left-0 w-32 h-32 z-20">
-        <div className="w-full h-full bg-orange-500 clip-diagonal-reverse"></div>
+        <div className="w-full h-full bg-primary clip-diagonal-reverse"></div>
       </div>
     </section>
   );

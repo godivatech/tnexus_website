@@ -34,19 +34,11 @@
     --sidebar-accent-foreground: 0 0% 10%;
     --sidebar-border: 0 0% 91%;
     --sidebar-ring: 18 96% 46%;
-    
-    /* Custom TNexus Colors */
-    --orange-primary: #E85D04;
-    --orange-dark: #D84315;
-    --orange-light: #FF8A50;
-    --dark-bg: #1a1a1a;
-    --dark-footer: #111111;
-    --text-dark: #1a1a1a;
-    --text-gray: #666666;
-    --text-light: #999999;
-    --bg-light: #f5f5f5;
-    --bg-white: #ffffff;
-    --border-color: #e5e5e5;
+
+    /* Brand Specific (Using HSL for consistency) */
+    --primary-hover: 18 96% 40%;
+    --dark: 0 0% 10%;
+    --dark-muted: 0 0% 18%;
   }
 }
 
@@ -76,8 +68,8 @@
   }
   
   .btn-primary {
-    @apply bg-orange-500 text-white px-6 py-3 rounded-sm font-medium 
-           transition-all duration-300 hover:bg-orange-600 
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-sm font-medium 
+           transition-all duration-300 hover:bg-primary-hover 
            flex items-center gap-2;
   }
   
@@ -88,21 +80,21 @@
   }
   
   .btn-outline {
-    @apply bg-transparent border border-gray-300 text-dark px-6 py-3 
+    @apply bg-transparent border border-border text-foreground px-6 py-3 
            rounded-sm font-medium transition-all duration-300 
-           hover:border-orange-500 hover:text-orange-500;
+           hover:border-primary hover:text-primary;
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-dark leading-tight;
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight;
   }
   
   .section-subtitle {
-    @apply text-orange-500 text-sm font-semibold uppercase tracking-wider mb-2;
+    @apply text-primary text-sm font-semibold uppercase tracking-wider mb-2;
   }
   
   .text-gradient {
-    @apply bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary to-primary-hover bg-clip-text text-transparent;
   }
   
   .card-shadow {
@@ -110,60 +102,60 @@
   }
   
   .nav-link {
-    @apply text-dark hover:text-orange-500 transition-colors duration-300 
+    @apply text-foreground hover:text-primary transition-colors duration-300 
            font-medium text-sm;
   }
   
   .nav-link-active {
-    @apply text-orange-500;
+    @apply text-primary;
   }
   
   .feature-card {
-    @apply bg-white p-8 relative overflow-hidden transition-all duration-300;
+    @apply bg-background p-8 relative overflow-hidden transition-all duration-300;
   }
   
   .feature-card::before {
     content: '';
-    @apply absolute top-0 right-0 w-20 h-20 bg-orange-500 opacity-10 
+    @apply absolute top-0 right-0 w-20 h-20 bg-primary opacity-10 
            transform translate-x-10 -translate-y-10 rotate-45;
   }
   
   .feature-card:hover {
-    @apply bg-orange-500;
+    @apply bg-primary;
   }
   
   .feature-card:hover * {
-    @apply text-white;
+    @apply text-primary-foreground;
   }
   
   .feature-card:hover .feature-icon {
-    @apply text-white;
+    @apply text-primary-foreground;
   }
   
   .feature-icon {
-    @apply text-orange-500 text-4xl mb-4 transition-colors duration-300;
+    @apply text-primary text-4xl mb-4 transition-colors duration-300;
   }
   
   .stat-number {
     @apply text-5xl md:text-6xl font-bold text-transparent bg-clip-text 
-           bg-gradient-to-b from-gray-400 to-gray-200;
+           bg-gradient-to-b from-muted-foreground/40 to-muted-foreground/10;
   }
   
   .service-tab {
     @apply px-6 py-4 text-left font-medium transition-all duration-300 
-           border-l-4 border-transparent hover:bg-gray-50;
+           border-l-4 border-transparent hover:bg-muted/50;
   }
   
   .service-tab.active {
-    @apply bg-orange-500 text-white border-orange-700;
+    @apply bg-primary text-primary-foreground border-primary-hover;
   }
   
   .process-card {
-    @apply bg-white p-8 relative;
+    @apply bg-background p-8 relative;
   }
   
   .process-number {
-    @apply absolute top-4 right-4 text-7xl font-bold text-gray-100 
+    @apply absolute top-4 right-4 text-7xl font-bold text-muted/20 
            select-none pointer-events-none;
   }
   
@@ -180,7 +172,7 @@
   }
   
   .project-overlay {
-    @apply absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent 
+    @apply absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/40 to-transparent 
            opacity-100 transition-opacity duration-300;
   }
   
@@ -189,7 +181,7 @@
   }
   
   .team-card .team-info {
-    @apply absolute bottom-0 left-0 right-0 bg-white p-4 text-center 
+    @apply absolute bottom-0 left-0 right-0 bg-background p-4 text-center 
            transform translate-y-2 transition-transform duration-300;
   }
   
@@ -198,7 +190,7 @@
   }
   
   .testimonial-card {
-    @apply bg-white p-6 rounded-lg shadow-card;
+    @apply bg-background p-6 rounded-lg shadow-card;
   }
   
   .partner-logo {
@@ -207,7 +199,7 @@
   }
   
   .blog-card {
-    @apply bg-white overflow-hidden shadow-card hover:shadow-hover 
+    @apply bg-background overflow-hidden shadow-card hover:shadow-hover 
            transition-shadow duration-300;
   }
   
@@ -216,21 +208,21 @@
   }
   
   .form-input {
-    @apply w-full px-4 py-3 border border-gray-300 rounded-sm 
-           focus:outline-none focus:border-orange-500 transition-colors duration-300
-           bg-white text-dark placeholder:text-gray-400;
+    @apply w-full px-4 py-3 border border-border rounded-sm 
+           focus:outline-none focus:border-primary transition-colors duration-300
+           bg-background text-foreground placeholder:text-muted-foreground;
   }
   
   .form-input-dark {
-    @apply w-full px-4 py-3 border border-gray-600 rounded-sm 
-           focus:outline-none focus:border-orange-500 transition-colors duration-300
-           bg-dark-100 text-white placeholder:text-gray-500;
+    @apply w-full px-4 py-3 border border-dark-muted rounded-sm 
+           focus:outline-none focus:border-primary transition-colors duration-300
+           bg-dark text-white placeholder:text-muted-foreground/50;
   }
   
   .scroll-to-top {
-    @apply fixed bottom-6 right-6 w-10 h-10 bg-orange-500 text-white 
+    @apply fixed bottom-6 right-6 w-10 h-10 bg-primary text-primary-foreground 
            rounded-sm flex items-center justify-center cursor-pointer 
-           transition-all duration-300 hover:bg-orange-600 z-50;
+           transition-all duration-300 hover:bg-primary-hover z-50;
   }
   
   .floating-btn {

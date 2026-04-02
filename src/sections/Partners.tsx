@@ -11,7 +11,7 @@ const partners = [
 
 const Partners = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-muted/30">
       <div className="container-tnexus">
         {/* Header */}
         <motion.div
@@ -22,7 +22,7 @@ const Partners = () => {
           className="text-center mb-12"
         >
           <span className="section-subtitle flex items-center justify-center gap-2">
-            <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+            <span className="w-2 h-2 bg-primary rounded-full"></span>
             PARTNERS
           </span>
           <h3 className="section-title mt-4">
@@ -39,13 +39,13 @@ const Partners = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="partner-logo flex items-center justify-center p-6 bg-white rounded-lg"
+              className="partner-logo flex items-center justify-center p-6 bg-background rounded-lg shadow-sm"
             >
               <div className="text-center">
-                <div className="text-2xl font-bold text-orange-500 mb-1">
+                <div className="text-2xl font-bold text-primary mb-1">
                   {partner.logo}
                 </div>
-                <div className="text-xs text-gray-500">{partner.name}</div>
+                <div className="text-xs text-muted-foreground">{partner.name}</div>
               </div>
             </motion.div>
           ))}

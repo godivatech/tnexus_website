@@ -26,14 +26,14 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-orange-500 text-sm font-medium uppercase tracking-wider mb-2 block">
+            <span className="text-primary text-sm font-medium uppercase tracking-wider mb-2 block">
               CONTACT
             </span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Have a project in mind?<br />
               Contact us
             </h2>
-            <p className="text-gray-400 mb-10 max-w-md">
+            <p className="text-white/60 mb-10 max-w-md">
               Ready to start your next construction project? Reach out to our team of experts for a comprehensive consultation and custom engineering solution.
             </p>
 
@@ -41,34 +41,34 @@ const Contact = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Location */}
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-orange-500 flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-primary flex items-center justify-center flex-shrink-0">
                   <MapPin size={20} />
                 </div>
                 <div>
                   <h4 className="font-bold mb-1 uppercase">Office Address</h4>
-                  <p className="text-gray-400 text-sm">Shrinagar, Iyerbungalow, Madurai</p>
+                  <p className="text-white/60 text-sm">Shrinagar, Iyerbungalow, Madurai</p>
                 </div>
               </div>
 
               {/* Phone */}
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-orange-500 flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-primary flex items-center justify-center flex-shrink-0">
                   <Phone size={20} />
                 </div>
                 <div>
                   <h4 className="font-bold mb-1 uppercase">Phone Number</h4>
-                  <p className="text-gray-400 text-sm">9944325345</p>
+                  <p className="text-white/60 text-sm">9944325345</p>
                 </div>
               </div>
 
               {/* Email */}
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-orange-500 flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-primary flex items-center justify-center flex-shrink-0">
                   <Mail size={20} />
                 </div>
                 <div>
                   <h4 className="font-bold mb-1">Email Address</h4>
-                  <p className="text-gray-400 text-sm">
+                  <p className="text-white/60 text-sm">
                     Interested in working with us?<br />
                     support.tnexus@gmail.com
                   </p>
@@ -77,12 +77,12 @@ const Contact = () => {
 
               {/* Hours */}
               <div className="flex gap-4">
-                <div className="w-12 h-12 bg-orange-500 flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-primary flex items-center justify-center flex-shrink-0">
                   <Clock size={20} />
                 </div>
                 <div>
                   <h4 className="font-bold mb-1">Opening Hour</h4>
-                  <p className="text-gray-400 text-sm">
+                  <p className="text-white/60 text-sm">
                     Mon - Fri: 09am - 07pm
                   </p>
                 </div>
@@ -97,9 +97,9 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <div className="bg-orange-500 p-8 md:p-10 clip-diagonal">
-              <h3 className="text-2xl font-bold mb-2">Get in Touch</h3>
-              <p className="text-white/80 text-sm mb-6">
+            <div className="bg-primary p-8 md:p-10 clip-diagonal">
+              <h3 className="text-2xl font-bold mb-2 text-primary-foreground">Get in Touch</h3>
+              <p className="text-primary-foreground/80 text-sm mb-6">
                 Fill out the form below and our project managers will get back to you within 24 hours.
               </p>
 

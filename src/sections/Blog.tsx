@@ -47,7 +47,7 @@ const blogPosts: BlogPost[] = [
 
 const Blog = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-background">
       <div className="container-tnexus">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
@@ -58,7 +58,7 @@ const Blog = () => {
             transition={{ duration: 0.5 }}
           >
             <span className="section-subtitle flex items-center gap-2">
-              <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+              <span className="w-2 h-2 bg-primary rounded-full"></span>
               UPDATES
             </span>
             <h2 className="section-title mt-4">
@@ -97,8 +97,8 @@ const Blog = () => {
                   alt={post.title}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                <span className="absolute bottom-4 left-4 px-3 py-1 bg-orange-500 text-white text-xs font-medium">
+                <div className="absolute inset-0 bg-dark/40" />
+                <span className="absolute bottom-4 left-4 px-3 py-1 bg-primary text-primary-foreground text-xs font-medium">
                   {post.category}
                 </span>
               </div>
@@ -106,31 +106,31 @@ const Blog = () => {
               {/* Content */}
               <div className="p-6">
                 {/* Meta */}
-                <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
+                <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
                   <span>By {post.author}</span>
                   <span>•</span>
                   <span>{post.date}</span>
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-dark mb-3 group-hover:text-orange-500 transition-colors">
+                <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                   {post.title}
                 </h3>
 
                 {/* Excerpt */}
-                <p className="text-gray-600 text-sm mb-4 line-clamp-2">
+                <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
                   {post.excerpt}
                 </p>
 
                 {/* Footer */}
-                <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                  <div className="flex items-center gap-2 text-sm text-gray-500">
+                <div className="flex items-center justify-between pt-4 border-t border-border">
+                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Clock size={14} />
                     {post.readTime}
                   </div>
                   <a
                     href="#"
-                    className="w-8 h-8 bg-gray-100 flex items-center justify-center text-dark hover:bg-orange-500 hover:text-white transition-all"
+                    className="w-8 h-8 bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-all"
                   >
                     <ArrowRight size={14} />
                   </a>

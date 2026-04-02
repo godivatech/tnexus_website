@@ -66,7 +66,7 @@ const Services = () => {
   const [activeService, setActiveService] = useState(0);
 
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-20 bg-background">
       <div className="container-tnexus">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
@@ -77,7 +77,7 @@ const Services = () => {
             transition={{ duration: 0.5 }}
           >
             <span className="section-subtitle flex items-center gap-2">
-              <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+              <span className="w-2 h-2 bg-primary rounded-full"></span>
               SERVICES
             </span>
             <h2 className="section-title mt-4">
@@ -112,7 +112,7 @@ const Services = () => {
               <button
                 key={service.id}
                 onClick={() => setActiveService(index)}
-                className={`service-tab w-full flex items-center justify-between ${activeService === index ? 'active' : 'text-gray-600 hover:text-dark'
+                className={`service-tab w-full flex items-center justify-between ${activeService === index ? 'active' : 'text-muted-foreground hover:text-foreground'
                   }`}
               >
                 <span>{service.title}</span>
@@ -143,7 +143,7 @@ const Services = () => {
                   alt={services[activeService].title}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-dark/30 to-transparent" />
               </motion.div>
             </AnimatePresence>
           </motion.div>
@@ -164,23 +164,23 @@ const Services = () => {
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.3 }}
               >
-                <h3 className="text-2xl font-bold text-dark mb-4">
+                <h3 className="text-2xl font-bold text-foreground mb-4">
                   {services[activeService].heading}
                 </h3>
-                <p className="text-gray-600 mb-6">
+                <p className="text-muted-foreground mb-6">
                   {services[activeService].description}
                 </p>
                 <ul className="space-y-3 mb-6">
                   {services[activeService].features.map((feature, index) => (
-                    <li key={index} className="flex items-center gap-3 text-gray-700">
-                      <span className="w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center">
-                        <Check size={12} className="text-orange-500" />
+                    <li key={index} className="flex items-center gap-3 text-foreground/80">
+                      <span className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
+                        <Check size={12} className="text-primary" />
                       </span>
                       {feature}
                     </li>
                   ))}
                 </ul>
-                <a href="#" className="text-orange-500 font-medium flex items-center gap-2 hover:gap-3 transition-all">
+                <a href="#" className="text-primary font-medium flex items-center gap-2 hover:gap-3 transition-all">
                   Read More
                   <ArrowRight size={16} />
                 </a>

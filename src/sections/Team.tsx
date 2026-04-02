@@ -39,7 +39,7 @@ const teamMembers: TeamMember[] = [
 
 const Team = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-muted/30">
       <div className="container-tnexus">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
@@ -50,7 +50,7 @@ const Team = () => {
             transition={{ duration: 0.5 }}
           >
             <span className="section-subtitle flex items-center gap-2">
-              <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+              <span className="w-2 h-2 bg-primary rounded-full"></span>
               ENGINEER
             </span>
             <h2 className="section-title mt-4">
@@ -93,19 +93,19 @@ const Team = () => {
                 <div className="absolute top-4 right-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <a 
                     href={member.socials.facebook}
-                    className="w-8 h-8 bg-orange-500 flex items-center justify-center text-white hover:bg-orange-600 transition-colors"
+                    className="w-8 h-8 bg-primary flex items-center justify-center text-primary-foreground hover:bg-primary-hover transition-colors"
                   >
                     <Facebook size={14} />
                   </a>
                   <a 
                     href={member.socials.twitter}
-                    className="w-8 h-8 bg-orange-500 flex items-center justify-center text-white hover:bg-orange-600 transition-colors"
+                    className="w-8 h-8 bg-primary flex items-center justify-center text-primary-foreground hover:bg-primary-hover transition-colors"
                   >
                     <Twitter size={14} />
                   </a>
                   <a 
                     href={member.socials.linkedin}
-                    className="w-8 h-8 bg-orange-500 flex items-center justify-center text-white hover:bg-orange-600 transition-colors"
+                    className="w-8 h-8 bg-primary flex items-center justify-center text-primary-foreground hover:bg-primary-hover transition-colors"
                   >
                     <Linkedin size={14} />
                   </a>
@@ -114,9 +114,9 @@ const Team = () => {
               
               {/* Info */}
               <div className="team-info">
-                <h3 className="text-lg font-bold text-dark">{member.name}</h3>
-                <p className="text-gray-600 text-sm">{member.role}</p>
-                <div className="w-12 h-0.5 bg-orange-500 mx-auto mt-3" />
+                <h3 className="text-lg font-bold text-foreground">{member.name}</h3>
+                <p className="text-muted-foreground text-sm">{member.role}</p>
+                <div className="w-12 h-0.5 bg-primary mx-auto mt-3" />
               </div>
             </motion.div>
           ))}

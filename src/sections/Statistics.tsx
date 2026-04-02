@@ -50,7 +50,7 @@ const AnimatedNumber = ({ value, suffix }: { value: number; suffix: string }) =>
 
 const Statistics = () => {
   return (
-    <section className="py-16 bg-gray-50 border-y border-gray-200">
+    <section className="py-16 bg-muted/20 border-y border-border">
       <div className="container-tnexus">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
@@ -63,7 +63,7 @@ const Statistics = () => {
               className="text-center"
             >
               <AnimatedNumber value={stat.value} suffix={stat.suffix} />
-              <p className="text-gray-600 mt-2 font-medium">{stat.label}</p>
+              <p className="text-muted-foreground mt-2 font-medium">{stat.label}</p>
             </motion.div>
           ))}
         </div>

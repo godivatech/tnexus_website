@@ -43,7 +43,7 @@ const testimonials: Testimonial[] = [
 
 const Testimonials = () => {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-background">
       <div className="container-tnexus">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
@@ -54,7 +54,7 @@ const Testimonials = () => {
             transition={{ duration: 0.5 }}
           >
             <span className="section-subtitle flex items-center gap-2">
-              <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
+              <span className="w-2 h-2 bg-primary rounded-full"></span>
               TESTIMONIALS
             </span>
             <h2 className="section-title mt-4">
@@ -95,15 +95,15 @@ const Testimonials = () => {
                     className="w-14 h-14 rounded-full object-cover"
                   />
                   <div>
-                    <h4 className="font-bold text-dark">{testimonial.name}</h4>
-                    <p className="text-sm text-gray-500">{testimonial.role}</p>
+                    <h4 className="font-bold text-foreground">{testimonial.name}</h4>
+                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                   </div>
                 </div>
-                <span className="text-gray-300 font-bold text-lg">{testimonial.company}</span>
+                <span className="text-muted/30 font-bold text-lg">{testimonial.company}</span>
               </div>
 
               {/* Content */}
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed">
                 {testimonial.content}
               </p>
 
@@ -115,13 +115,13 @@ const Testimonials = () => {
                     <Star
                       key={i}
                       size={14}
-                      className={i < testimonial.rating ? 'text-orange-500 fill-orange-500' : 'text-gray-300'}
+                      className={i < testimonial.rating ? 'text-primary fill-primary' : 'text-muted'}
                     />
                   ))}
                 </div>
 
                 {/* Quote Icon */}
-                <Quote size={32} className="text-gray-200" />
+                <Quote size={32} className="text-muted/20" />
               </div>
             </motion.div>
           ))}

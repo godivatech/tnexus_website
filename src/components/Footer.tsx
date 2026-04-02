@@ -13,12 +13,12 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#1c1c1c] text-white font-sans relative overflow-hidden">
+    <footer className="bg-dark text-white font-sans relative overflow-hidden">
       <div className="absolute bottom-0 left-0 w-full h-80 bg-no-repeat bg-bottom bg-cover opacity-5 pointer-events-none" style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1542621334-a254cf47733d?w=1600&q=80")' }}></div>
       <div className="relative z-10">
 
         {/* Newsletter Section */}
-        <div className="border-b border-gray-800">
+        <div className="border-b border-white/10">
           <div className="container-tnexus py-10">
             <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
 
@@ -30,7 +30,7 @@ const Footer = () => {
 
               {/* Newsletter Text */}
               <div className="lg:w-2/4 lg:text-right px-4">
-                <p className="text-gray-300 text-sm xl:px-8">
+                <p className="text-white/60 text-sm xl:px-8">
                   Subscribe for the latest news. Stay updated<br className="hidden lg:block" /> on the latest trends.
                 </p>
               </div>
@@ -43,9 +43,9 @@ const Footer = () => {
                     placeholder="Enter Your Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full bg-[#2a2a2a] text-gray-300 px-6 py-4 pr-40 rounded-full focus:outline-none placeholder-gray-500 text-sm"
+                    className="w-full bg-white/5 text-white/80 px-6 py-4 pr-40 rounded-full focus:outline-none placeholder-white/20 text-sm border border-white/10 focus:border-primary/50 transition-colors"
                   />
-                  <button type="submit" className="absolute right-1 top-1 bottom-1 bg-orange-500 hover:bg-orange-600 text-white px-6 rounded-full font-medium transition-colors flex items-center justify-center gap-2 text-sm">
+                  <button type="submit" className="absolute right-1 top-1 bottom-1 bg-primary hover:bg-primary-hover text-primary-foreground px-6 rounded-full font-medium transition-colors flex items-center justify-center gap-2 text-sm">
                     Subscribe Now
                     <ArrowRight size={16} />
                   </button>
@@ -63,10 +63,10 @@ const Footer = () => {
             {/* Column 1: About Company */}
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
               <h4 className="text-xl font-bold mb-6">About Company</h4>
-              <p className="text-gray-400 text-sm leading-relaxed mb-8">
+              <p className="text-white/60 text-sm leading-relaxed mb-8">
                 TNexus Constructions stands for quality, innovation, and reliability. We are committed to building a better future through exceptional infrastructure.
               </p>
-              <div className="font-bold text-4xl tracking-wide text-transparent" style={{ WebkitTextStroke: '1px #f97316' }}>
+              <div className="font-bold text-4xl tracking-wide text-transparent" style={{ WebkitTextStroke: '1px hsl(var(--primary))' }}>
                 Since 2020
               </div>
             </motion.div>
@@ -76,18 +76,18 @@ const Footer = () => {
               <h4 className="text-xl font-bold mb-6">Useful Links</h4>
               <div className="grid grid-cols-2 gap-y-4 gap-x-4">
                 <div className="flex flex-col space-y-4">
-                  <Link to="/about" className="text-gray-400 text-sm hover:text-white transition-colors">About Us</Link>
-                  <Link to="/projects" className="text-gray-400 text-sm hover:text-white transition-colors">Projects</Link>
-                  <Link to="/careers" className="text-gray-400 text-sm hover:text-white transition-colors">Careers</Link>
-                  <Link to="/blog" className="text-gray-400 text-sm hover:text-white transition-colors">Blog</Link>
-                  <Link to="/privacy" className="text-gray-400 text-sm hover:text-white transition-colors">Privacy Policy</Link>
+                  <Link to="/about" className="text-white/60 text-sm hover:text-white transition-colors">About Us</Link>
+                  <Link to="/projects" className="text-white/60 text-sm hover:text-white transition-colors">Projects</Link>
+                  <Link to="/careers" className="text-white/60 text-sm hover:text-white transition-colors">Careers</Link>
+                  <Link to="/blog" className="text-white/60 text-sm hover:text-white transition-colors">Blog</Link>
+                  <Link to="/privacy" className="text-white/60 text-sm hover:text-white transition-colors">Privacy Policy</Link>
                 </div>
                 <div className="flex flex-col space-y-4">
-                  <Link to="/services" className="text-gray-400 text-sm hover:text-white transition-colors">Services</Link>
-                  <Link to="/pricing" className="text-gray-400 text-sm hover:text-white transition-colors">Pricing</Link>
-                  <Link to="/team" className="text-gray-400 text-sm hover:text-white transition-colors">Team</Link>
-                  <Link to="/contact" className="text-orange-500 text-sm hover:text-white transition-colors">Contact</Link>
-                  <Link to="/terms" className="text-gray-400 text-sm hover:text-white transition-colors">Terms of use</Link>
+                  <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">Services</Link>
+                  <Link to="/pricing" className="text-white/60 text-sm hover:text-white transition-colors">Pricing</Link>
+                  <Link to="/team" className="text-white/60 text-sm hover:text-white transition-colors">Team</Link>
+                  <Link to="/contact" className="text-primary text-sm hover:text-white transition-colors">Contact</Link>
+                  <Link to="/terms" className="text-white/60 text-sm hover:text-white transition-colors">Terms of use</Link>
                 </div>
               </div>
             </motion.div>
@@ -96,7 +96,7 @@ const Footer = () => {
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }} className="space-y-8">
               <div>
                 <h4 className="text-xl font-bold mb-6">Office Address</h4>
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-white/60 text-sm leading-relaxed">
                   Shrinagar, Iyerbungalow, Madurai<br />
                   Tamil Nadu, India
                 </p>
@@ -108,23 +108,23 @@ const Footer = () => {
               <div>
                 <h4 className="text-xl font-bold mb-6">Phone Number</h4>
                 <div className="flex flex-col gap-2">
-                  <a href="tel:+916369361053" className="text-gray-400 text-sm hover:text-orange-500 transition-colors">+91 63693 61053</a>
-                  <a href="tel:+916383978571" className="text-gray-400 text-sm hover:text-orange-500 transition-colors">+91 63839 78571</a>
+                  <a href="tel:+916369361053" className="text-white/60 text-sm hover:text-primary transition-colors">+91 63693 61053</a>
+                  <a href="tel:+916383978571" className="text-white/60 text-sm hover:text-primary transition-colors">+91 63839 78571</a>
                 </div>
               </div>
               <div>
                 <h4 className="text-xl font-bold mb-6 mt-8 lg:mt-0 pt-4">Follow Us</h4>
                 <div className="flex gap-2">
-                  <a href="#" className="w-10 h-10 bg-[#2a2a2a] flex items-center justify-center rounded text-gray-400 hover:text-white hover:bg-orange-500 transition-all">
+                  <a href="#" className="w-10 h-10 bg-white/5 flex items-center justify-center rounded text-white/60 hover:text-primary-foreground hover:bg-primary transition-all">
                     <Facebook size={16} />
                   </a>
-                  <a href="#" className="w-10 h-10 bg-[#2a2a2a] flex items-center justify-center rounded text-gray-400 hover:text-white hover:bg-orange-500 transition-all">
+                  <a href="#" className="w-10 h-10 bg-white/5 flex items-center justify-center rounded text-white/60 hover:text-primary-foreground hover:bg-primary transition-all">
                     <svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor" className="w-4 h-4"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
                   </a>
-                  <a href="#" className="w-10 h-10 bg-[#2a2a2a] flex items-center justify-center rounded text-gray-400 hover:text-white hover:bg-orange-500 transition-all">
+                  <a href="#" className="w-10 h-10 bg-white/5 flex items-center justify-center rounded text-white/60 hover:text-primary-foreground hover:bg-primary transition-all">
                     <Youtube size={16} />
                   </a>
-                  <a href="#" className="w-10 h-10 bg-[#2a2a2a] flex items-center justify-center rounded text-gray-400 hover:text-white hover:bg-orange-500 transition-all">
+                  <a href="#" className="w-10 h-10 bg-white/5 flex items-center justify-center rounded text-white/60 hover:text-primary-foreground hover:bg-primary transition-all">
                     <Linkedin size={16} />
                   </a>
                 </div>
@@ -135,10 +135,10 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-gray-800">
+        <div className="border-t border-white/10">
           <div className="container-tnexus py-6">
-            <div className="text-center text-sm text-gray-400">
-              <p>© 2026 TNexus. Designed By <a href="https://godivatech.com" className="text-orange-500 hover:underline">Godivatech</a>.</p>
+            <div className="text-center text-sm text-white/60">
+              <p>© 2026 TNexus. Designed By <a href="https://godivatech.com" className="text-primary hover:underline">Godivatech</a>.</p>
             </div>
           </div>
         </div>
