@@ -24,12 +24,7 @@ const Footer = () => {
 
               {/* Logo */}
               <Link to="/" className="flex items-center gap-3 lg:w-1/4">
-                <div className="relative w-8 h-8 flex-shrink-0">
-                  <div className="absolute inset-0 bg-orange-500 transform rotate-45"></div>
-                  <div className="absolute inset-1 bg-[#1c1c1c] transform rotate-45 flex items-center justify-center">
-                    <div className="w-3 h-3 bg-orange-500 transform rotate-45"></div>
-                  </div>
-                </div>
+                <img src="/images/logo.png" alt="TNexus Logo" className="h-10 w-auto flex-shrink-0" />
                 <span className="text-2xl font-bold tracking-wide">TNexus</span>
               </Link>
 

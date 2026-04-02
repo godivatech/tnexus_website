@@ -65,12 +65,7 @@ const Navbar = () => {
         <div className="container-tnexus flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <div className="relative w-10 h-10">
-              <div className="absolute inset-0 bg-orange-500 clip-diagonal"></div>
-              <div className="absolute inset-1 bg-white clip-diagonal flex items-center justify-center">
-                <div className="w-4 h-4 bg-dark clip-diagonal"></div>
-              </div>
-            </div>
+            <img src="/images/logo.png" alt="TNexus Logo" className="h-16 w-auto" />
             <span className="text-2xl font-bold text-dark uppercase tracking-tight">TNexus</span>
           </Link>
 
