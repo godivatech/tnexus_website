@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <>
       {/* Top Bar */}
-      <div className={`bg-dark text-white py-2 transition-all duration-300 ${isScrolled ? 'hidden' : 'block'}`}>
+      <div className={`bg-dark text-white py-2 transition-all duration-300 ${isScrolled ? 'hidden' : 'hidden md:block'}`}>
         <div className="container-tnexus flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
             <span className="text-primary">Email:</span>
