@@ -58,15 +58,14 @@ const Navbar = () => {
       {/* Main Navbar */}
       <nav
         className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled
-            ? 'bg-background shadow-lg py-3'
-            : 'bg-background py-4'
+          ? 'bg-background shadow-lg py-3'
+          : 'bg-background py-4'
           }`}
       >
         <div className="container-tnexus flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center">
             <img src="/images/logo.png" alt="TNexus Logo" className="h-16 w-auto" />
-            <span className="text-2xl font-bold text-foreground uppercase tracking-tight">TNexus</span>
           </Link>
 
           {/* Social Icons - Desktop */}
