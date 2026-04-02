@@ -67,8 +67,8 @@ module.exports = {
         hover: "0 8px 30px rgba(0, 0, 0, 0.12)",
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        heading: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Montserrat', 'system-ui', 'sans-serif'],
+        heading: ['Montserrat', 'system-ui', 'sans-serif'],
       },
       keyframes: {
         "accordion-down": {
