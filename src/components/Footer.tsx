@@ -23,9 +23,8 @@ const Footer = () => {
             <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
 
               {/* Logo */}
-              <Link to="/" className="flex items-center gap-3 lg:w-1/4">
-                <img src="/images/logo.png" alt="TNexus Logo" className="h-10 w-auto flex-shrink-0" />
-                <span className="text-2xl font-bold tracking-wide">TNexus</span>
+              <Link to="/" className="flex items-center lg:w-1/4">
+                <img src="/images/logo.png" alt="TNexus Logo" className="h-16 w-auto flex-shrink-0" />
               </Link>
 
               {/* Newsletter Text */}
