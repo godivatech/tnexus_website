@@ -18,7 +18,7 @@ const testimonials: Testimonial[] = [
     role: 'Engineer',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80',
     company: 'V-Arch Group',
-    content: 'TNexus Constructions delivered our project with exceptional quality and professionalism. Their attention to detail is remarkable.',
+    content: "Nexus Construction didn't just build our headquarters; they built a best relationship between us. Their attention to detail during the foundation phase was remarkable.",
     rating: 5,
   },
   {
@@ -36,7 +36,7 @@ const testimonials: Testimonial[] = [
     role: 'Director',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80',
     company: 'Heritage Homes',
-    content: 'Outstanding service and reliable support. I would highly recommend TNexus Constructions for any major infrastructure project.',
+    content: 'Outstanding service and reliable support. I would highly recommend Nexus Construction for any major infrastructure project.',
     rating: 5,
   },
 ];
@@ -58,7 +58,7 @@ const Testimonials = () => {
               TESTIMONIALS
             </span>
             <h2 className="section-title mt-4">
-              What people say about<br />TNexus Constructions
+              What people say about<br />Nexus Construction
             </h2>
           </motion.div>
 

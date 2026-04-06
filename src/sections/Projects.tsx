@@ -12,39 +12,27 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1542332213-9b5a5a3fab35?w=800&q=80',
     category: 'Commercial',
-    title: 'Modern Office Hub',
+    title: 'Indian Oil Petrol Pump',
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1555633514-abcee6ad93e1?w=800&q=80',
-    category: 'Commercial',
-    title: 'Retail & Shopping Complex',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80',
+    category: 'Residential',
+    title: 'Residential House Construction',
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80',
-    category: 'Residential',
-    title: 'Luxury Apartment Complex',
+    image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80',
+    category: 'Commercial',
+    title: 'Green Fresh Organic Market',
   },
   {
     id: 4,
-    image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80',
-    category: 'Residential',
-    title: 'Premium Independent Villa',
-  },
-  {
-    id: 5,
-    image: 'https://images.unsplash.com/photo-1586528116311-ad86d5259952?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80',
     category: 'Industrial',
-    title: 'Logistics Hub & Warehouse',
-  },
-  {
-    id: 6,
-    image: 'https://images.unsplash.com/photo-1523050353051-93e506689d44?w=800&q=80',
-    category: 'Institutional',
-    title: 'Educational Facility',
+    title: 'Industrial Project',
   },
 ];
 

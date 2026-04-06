@@ -59,7 +59,7 @@ const AboutPage = () => {
           >
             <span className="section-subtitle flex items-center justify-center gap-2">
               <span className="w-2 h-2 bg-primary rounded-full"></span>
-              ABOUT TNEXUS
+              ABOUT NEXUS CONSTRUCTION
             </span>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4">
               Providing end-to-end best construction solutions across Tamil Nadu since 2020.
@@ -83,7 +83,7 @@ const AboutPage = () => {
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-3">Our Mission</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  To deliver high-quality, sustainable industrial and residential infrastructure using advanced construction methodologies and engineering excellence.
+                  To provide superior construction services by fostering a culture of safety, precision, and sustainable building practices.
                 </p>
                 <div className="w-12 h-0.5 bg-primary mt-4" />
               </div>
@@ -104,11 +104,43 @@ const AboutPage = () => {
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-3">Our Vision</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  To be the most trusted construction partner in South India, recognized for our commitment to quality, safety, and timely project delivery.
+                  To be the leading regional link between ambitious architectural design and structural reality.
                 </p>
                 <div className="w-12 h-0.5 bg-primary mt-4" />
               </div>
             </motion.div>
+          </div>
+
+          {/* Core Values */}
+          <div className="mt-20">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="text-center mb-12"
+            >
+              <h3 className="text-2xl font-bold text-foreground">Our Core Values</h3>
+            </motion.div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {[
+                { title: 'Connectivity', description: 'Maintaining transparent communication with clients and partners.' },
+                { title: 'Quality', description: 'Uncompromising standards in every material and finish.' },
+                { title: 'Integrity', description: 'Delivering on time, within budget, and with total honesty.' },
+              ].map((value, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="bg-muted/30 p-8 text-center border-t-4 border-primary"
+                >
+                  <h4 className="text-xl font-bold mb-4">{value.title}</h4>
+                  <p className="text-muted-foreground text-sm">{value.description}</p>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -162,7 +194,7 @@ const AboutPage = () => {
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-4">{timelineTabs[activeTab].title}</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                From our inception in Madurai, TNexus has grown consistently by delivering exceptional residential villas, apartments, and modern commercial spaces.
+                From our inception in Madurai, Nexus Construction has grown consistently by delivering exceptional residential villas, apartments, and modern commercial spaces.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3 text-foreground/80">

@@ -24,7 +24,7 @@ const Footer = () => {
 
               {/* Logo */}
               <Link to="/" className="flex items-center lg:w-1/4">
-                <img src="/images/logo.png" alt="TNexus Logo" className="h-16 w-auto flex-shrink-0 brightness-0 invert" />
+                <img src="/images/logo.png" alt="Nexus Construction Logo" className="h-16 w-auto flex-shrink-0 brightness-0 invert" />
               </Link>
 
               {/* Newsletter Text */}
@@ -63,7 +63,7 @@ const Footer = () => {
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5 }}>
               <h4 className="text-xl font-bold mb-6">About Company</h4>
               <p className="text-white/60 text-sm leading-relaxed mb-8">
-                TNexus Constructions stands for quality, innovation, and reliability. We are committed to building a better future through exceptional infrastructure.
+                Nexus Construction is a premier full-service construction firm dedicated to delivering high-quality residential, commercial, and industrial projects. Founded on the principles of integrity and innovation.
               </p>
               <div className="font-bold text-4xl tracking-wide text-transparent" style={{ WebkitTextStroke: '1px #063d6b' }}>
                 Since 2020
@@ -107,8 +107,8 @@ const Footer = () => {
               <div>
                 <h4 className="text-xl font-bold mb-6">Phone Number</h4>
                 <div className="flex flex-col gap-2">
-                  <a href="tel:+916369361053" className="text-white/60 text-sm hover:text-primary transition-colors">+91 63693 61053</a>
-                  <a href="tel:+916383978571" className="text-white/60 text-sm hover:text-primary transition-colors">+91 63839 78571</a>
+                  <a href="tel:6369361053" className="text-white/60 text-sm hover:text-primary transition-colors">6369361053</a>
+                  <a href="tel:9025776659" className="text-white/60 text-sm hover:text-primary transition-colors">9025776659</a>
                 </div>
               </div>
               <div>
@@ -137,7 +137,7 @@ const Footer = () => {
         <div className="border-t border-white/10">
           <div className="container-tnexus py-6">
             <div className="text-center text-sm text-white/60">
-              <p>© 2026 TNexus. Designed By <a href="https://godivatech.com" className="text-primary hover:underline">Godivatech</a>.</p>
+              <p>© 2026 Nexus Construction. Designed By <a href="https://godivatech.com" className="text-primary hover:underline">Godivatech</a>.</p>
             </div>
           </div>
         </div>

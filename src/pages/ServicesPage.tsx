@@ -4,52 +4,38 @@ import { ArrowRight, ArrowUpRight } from 'lucide-react';
 const services = [
   {
     id: 1,
-    title: 'Residential & Villa Construction',
-    description: "Custom homes and luxury villas built with precision and Tamil Nadu's architectural heritage in mind.",
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80',
+    title: 'General Contracting',
+    description: 'Complete project management, subcontractor coordination, and site supervision.',
+    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80',
     number: '01',
   },
   {
     id: 2,
-    title: 'Commercial & Retail Spaces',
-    description: 'Developing modern offices, shopping complexes, and retail environments that drive business growth.',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80',
+    title: 'Design-Build',
+    description: 'A streamlined approach where we handle both the design and construction phases.',
+    image: 'https://images.unsplash.com/photo-1503387762-592dee58c460?w=600&q=80',
     number: '02',
   },
   {
     id: 3,
-    title: 'Premium Apartments',
-    description: 'Expertly designed multi-family residential complexes that offer modern living experiences.',
-    image: 'https://images.unsplash.com/photo-1586528116311-ad86d5259952?w=600&q=80',
+    title: 'Commercial Renovation',
+    description: 'Modernizing existing spaces to meet 21st-century business needs.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80',
     number: '03',
   },
   {
     id: 4,
-    title: 'Institutional Projects',
-    description: 'Leading construction for schools, colleges, and healthcare facilities with safety-first infrastructure.',
-    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&q=80',
+    title: 'Civil Engineering',
+    description: 'Large-scale infrastructure projects including roads, boundary walls, drainage, and utilities.',
+    image: 'https://images.unsplash.com/photo-1574123853831-d42135661605?w=600&q=80',
     number: '04',
   },
   {
     id: 5,
-    title: 'Structural Renovation',
-    description: 'Professional structural restoration and modern upgrades for existing commercial and residential buildings.',
-    image: 'https://images.unsplash.com/photo-1503387762-592dee58c460?w=600&q=80',
+    title: 'Sustainability Consulting',
+    description: 'Implementing LEED standards and eco-friendly premium building materials.',
+    image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80',
     number: '05',
-  },
-  {
-    id: 6,
-    title: 'Civil & Land Development',
-    description: 'Comprehensive site preparation, foundation engineering, and civil infrastructure for residential and commercial developments.',
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80',
-    number: '06',
-  },
-  {
-    id: 7,
-    title: 'Architectural Planning',
-    description: 'Integrated design and planning services that merge modern functionality with structural excellence.',
-    image: 'https://images.unsplash.com/photo-1503387762-592dee58c460?w=600&q=80',
-    number: '07',
   },
 ];
 
@@ -263,16 +249,16 @@ const ServicesPage = () => {
               <span className="w-2 h-2 bg-primary rounded-full"></span>
               OUR SERVICE COMMITMENT
             </span>
-            <h2 className="section-title mt-4">Why Choose TNexus Constructions?</h2>
+            <h2 className="section-title mt-4">Why Choose Nexus Construction?</h2>
           </motion.div>
 
 
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { name: 'Safety & Integrity', description: 'Zero-incident policy and ethical practices.', popular: false, features: ['Zero-Incident Policy', 'Ethical Material Sourcing', 'Transparent Communication', 'Regulatory Compliance', 'Workers\' Welfare Focus'] },
-              { name: 'Advanced Technology', description: 'Leveraging modern tools for superior builds.', popular: true, features: ['BIM Modeling', 'Smart Site Management', 'Eco-Friendly Materials', 'Modular Construction', 'Real-Time Progress Tracking'] },
-              { name: 'Client Satisfaction', description: 'Defined by the satisfaction of our partners.', popular: false, features: ['On-Time Project Delivery', 'Budget-Friendly Execution', 'Personalized Support', 'Post-Construction Service', 'Long-Term Partnerships'] },
+              { name: 'Safety First', description: 'Our "Zero-Incident" policy ensures that our workforce and your site remain secure every day.', popular: false, features: ['Zero-Incident Policy', 'Secure Work Sites', 'Safety Training', 'OSHA Compliance', 'Accident Prevention'] },
+              { name: 'Advanced Technology', description: 'We utilize Building Information Modeling (BIM) to visualize projects in 3D before a single shovel hits the dirt, reducing costly errors.', popular: true, features: ['3D Visualization', 'Cost Reduction', 'Error Minimization', 'Precision Planning', 'Modern BIM Tools'] },
+              { name: 'Expert Team', description: 'Our engineers and project managers hold decades of combined industry experience.', popular: false, features: ['Expert Engineers', 'Certified Managers', 'Vast Experience', 'Professional Conduct', 'Industry Knowledge'] },
             ].map((plan, index) => (
               <motion.div
                 key={index}

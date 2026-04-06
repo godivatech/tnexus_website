@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className="container-tnexus flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
             <span className="text-primary">Email:</span>
-            support.tnexus@gmail.com
+            thenexusconstruction@gmail.com
             <span className="text-primary ml-4">Call:</span>
             <a href="tel:6369361053" className="hover:text-primary transition-colors">
               6369361053
@@ -65,7 +65,7 @@ const Navbar = () => {
         <div className="container-tnexus flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src="/images/logo.png" alt="TNexus Logo" className="h-20 w-auto" />
+            <img src="/images/logo.png" alt="Nexus Construction Logo" className="h-20 w-auto" />
           </Link>
 
           {/* Social Icons - Desktop */}

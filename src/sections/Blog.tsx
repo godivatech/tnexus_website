@@ -29,7 +29,7 @@ const blogPosts: BlogPost[] = [
     author: 'Karthik Nathan',
     date: 'Feb 12, 2024',
     title: 'Building Resilient Infrastructure for Modern Developments in Tamil Nadu',
-    excerpt: "Discover how TNexus Constructions is implementing innovative engineering solutions to build sustainable urban infrastructure.",
+    excerpt: "Discover how Nexus Construction is implementing innovative engineering solutions to build sustainable urban infrastructure.",
     category: 'Infrastructure',
     readTime: '8 min read',
   },

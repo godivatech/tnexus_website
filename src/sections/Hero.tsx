@@ -12,14 +12,14 @@ const slides: Slide[] = [
   {
     id: 1,
     image: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1920&q=80',
-    title: 'Building Excellence in Tamil Nadu',
-    subtitle: 'From modern commercial complexes to large-scale industrial facilities, we provide construction solutions that power growth with engineering precision.',
+    title: 'Building the Future',
+    subtitle: 'Nexus Construction is a premier full-service construction firm dedicated to delivering high-quality residential, commercial, and industrial projects.',
   },
   {
     id: 2,
     image: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1920&q=80',
-    title: 'Your Trusted Partner in Construction',
-    subtitle: 'Expert engineering solutions for the residential and commercial sectors, delivering high-quality facilities built for structural integrity and long-term performance.',
+    title: '"The Nexus Point"',
+    subtitle: 'Where client vision meets architectural excellence. Delivering on time, within budget, and with total honesty.',
   },
 ];
 
@@ -64,8 +64,8 @@ const Hero = () => {
       {/* Side Info Bar */}
       <div className="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 flex-col items-center gap-4 py-8 z-20"
         style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg) translateY(50%)' }}>
-        <span className="text-white/70 text-sm tracking-wider">Call: 9944325345</span>
-        <span className="text-white/70 text-sm tracking-wider">Email: support.tnexus@gmail.com</span>
+        <span className="text-white/70 text-sm tracking-wider">Call: 6369361053</span>
+        <span className="text-white/70 text-sm tracking-wider">Email: thenexusconstruction@gmail.com</span>
       </div>
 
       {/* Content */}

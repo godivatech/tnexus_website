@@ -42,13 +42,13 @@ const About = () => {
             className="lg:pl-8"
           >
             <h3 className="text-2xl font-bold text-foreground mb-4">
-              Welcome to TNexus Constructions, a leading innovator with a rich history of excellence.
+              Welcome to Nexus Construction, a premier full-service construction firm dedicated to excellence.
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              At the heart of Tamil Nadu's infrastructure development, TNexus Constructions stands as a multidimensional force of progress, building high-quality residential, commercial, and industrial spaces across the state.
+              Founded on the principles of integrity and innovation, Nexus Construction delivers high-quality residential, commercial, and industrial projects that power growth with engineering precision.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              With a passion for precision and a commitment to quality, we have been building dreams and driving progress for over 6 years. Our diverse team of experts brings together years of experience across multiple sectors.
+              "The Nexus Point"—where client vision meets architectural excellence. We provide a comprehensive suite of services designed to handle a project from breaking ground to the final walkthrough.
             </p>
             
             <a href="#services" className="btn-primary inline-flex">
