@@ -18,7 +18,7 @@ const slides: Slide[] = [
   {
     id: 2,
     image: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1920&q=80',
-    title: '"The Nexus Point"',
+    title: 'Turning Vision into Reality',
     subtitle: 'Where client vision meets architectural excellence. Delivering on time, within budget, and with total honesty.',
   },
 ];
