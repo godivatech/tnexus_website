@@ -70,3 +70,8 @@ Ready to start your next build? Let’s connect.
 
 
 Now carefully look in to our completel websiote and change the deatils from this client doc wherever needed in the site 
+
+in the task management of this phase 
+
+
+

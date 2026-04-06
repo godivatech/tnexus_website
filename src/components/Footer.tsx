@@ -65,29 +65,20 @@ const Footer = () => {
               <p className="text-white/60 text-sm leading-relaxed mb-8">
                 Nexus Construction is a premier full-service construction firm dedicated to delivering high-quality residential, commercial, and industrial projects. Founded on the principles of integrity and innovation.
               </p>
-              <div className="font-bold text-4xl tracking-wide text-transparent" style={{ WebkitTextStroke: '1px #063d6b' }}>
+              <div className="font-bold text-4xl tracking-wide text-transparent" style={{ WebkitTextStroke: '1px rgba(255, 255, 255, 0.3)' }}>
                 Since 2020
               </div>
             </motion.div>
 
-            {/* Column 2: Useful Links */}
+            {/* Column 2: Services */}
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}>
-              <h4 className="text-xl font-bold mb-6">Useful Links</h4>
-              <div className="grid grid-cols-2 gap-y-4 gap-x-4">
-                <div className="flex flex-col space-y-4">
-                  <Link to="/about" className="text-white/60 text-sm hover:text-white transition-colors">About Us</Link>
-                  <Link to="/projects" className="text-white/60 text-sm hover:text-white transition-colors">Projects</Link>
-                  <Link to="/careers" className="text-white/60 text-sm hover:text-white transition-colors">Careers</Link>
-                  <Link to="/blog" className="text-white/60 text-sm hover:text-white transition-colors">Blog</Link>
-                  <Link to="/privacy" className="text-white/60 text-sm hover:text-white transition-colors">Privacy Policy</Link>
-                </div>
-                <div className="flex flex-col space-y-4">
-                  <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">Services</Link>
-                  <Link to="/pricing" className="text-white/60 text-sm hover:text-white transition-colors">Pricing</Link>
-                  <Link to="/team" className="text-white/60 text-sm hover:text-white transition-colors">Team</Link>
-                  <Link to="/contact" className="text-primary text-sm hover:text-white transition-colors">Contact</Link>
-                  <Link to="/terms" className="text-white/60 text-sm hover:text-white transition-colors">Terms of use</Link>
-                </div>
+              <h4 className="text-xl font-bold mb-6">Services</h4>
+              <div className="flex flex-col space-y-4">
+                <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">General Contracting</Link>
+                <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">Design-Build</Link>
+                <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">Commercial Renovation</Link>
+                <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">Civil Engineering</Link>
+                <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">Sustainability Consulting</Link>
               </div>
             </motion.div>
 
@@ -137,7 +128,7 @@ const Footer = () => {
         <div className="border-t border-white/10">
           <div className="container-tnexus py-6">
             <div className="text-center text-sm text-white/60">
-              <p>© 2026 Nexus Construction. Designed By <a href="https://godivatech.com" className="text-primary hover:underline">Godivatech</a>.</p>
+              <p>© 2026 Nexus Construction. Designed By <a href="https://godivatech.com" className="text-primary hover:underline hover:text-white transition-colors">Godivatech</a>.</p>
             </div>
           </div>
         </div>

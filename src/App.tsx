@@ -53,13 +53,13 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route 
-            path="/about" 
-            element={FEATURE_FLAGS.aboutUnderDevelopment ? <UnderDevelopment pageName="About Us" /> : <AboutPage />} 
+          <Route
+            path="/about"
+            element={FEATURE_FLAGS.aboutUnderDevelopment ? <UnderDevelopment pageName="About Us" /> : <AboutPage />}
           />
-          <Route 
-            path="/services" 
-            element={FEATURE_FLAGS.servicesUnderDevelopment ? <UnderDevelopment pageName="Our Services" /> : <ServicesPage />} 
+          <Route
+            path="/services"
+            element={FEATURE_FLAGS.servicesUnderDevelopment ? <UnderDevelopment pageName="Our Services" /> : <ServicesPage />}
           />
           <Route path="/contact" element={<ContactPage />} />
           {/* Add more routes as needed */}
