@@ -45,10 +45,10 @@ const About = () => {
               Welcome to Nexus Construction, a premier full-service construction firm dedicated to excellence.
             </h3>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Founded on the principles of integrity and innovation, Nexus Construction delivers high-quality residential, commercial, and industrial projects that power growth with engineering precision.
+              Founded on the principles of integrity and innovation, Nexus Construction delivers high-quality residential, commercial, industrial, and interior renovation projects with engineering precision.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              "The Nexus Point"—where client vision meets architectural excellence. We provide a comprehensive suite of services designed to handle a project from breaking ground to the final walkthrough.
+              "The Nexus Point"—where client vision meets architectural excellence. From high-rise elevation to specialized petrol pump infrastructure, we handle projects from breaking ground to the final handover.
             </p>
             
             <a href="#services" className="btn-primary inline-flex">
