@@ -17,10 +17,12 @@ const About = () => {
               <span className="w-2 h-2 bg-primary rounded-full"></span>
               ABOUT US
             </span>
-            <h2 className="section-title mt-4 mb-6">
-              We work for you <span className="text-primary">since 2020.</span><br />
-              Leading Construction Projects in Tamil Nadu
+            <h2 className="section-title mt-4 mb-4 whitespace-nowrap">
+              We work for you <span className="text-primary">since 2020</span>
             </h2>
+            <h3 className="text-xl md:text-2xl font-bold text-foreground/80 mb-6">
+              Leading Construction Projects in Tamil Nadu
+            </h3>
             
             {/* Image */}
             <div className="relative mt-8">
