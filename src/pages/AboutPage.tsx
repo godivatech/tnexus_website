@@ -203,7 +203,7 @@ const AboutPage = () => {
             <div>
               <h3 className="text-2xl font-bold text-foreground mb-4">{timelineTabs[activeTab].title}</h3>
               <p className="text-muted-foreground leading-relaxed mb-6">
-                From our inception in Madurai, Nexus Construction has grown consistently by delivering exceptional residential villas, apartments, and modern commercial spaces.
+                From our inception in Madurai, Nexus Construction has grown consistently by delivering exceptional residential villas, commercial landmarks, industrial infrastructure, and premium interiors.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center gap-3 text-foreground/80">
@@ -308,7 +308,7 @@ const AboutPage = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { value: '45+', label: 'Drilling Fields' },
+              { value: '45+', label: 'Successful Handover' },
               { value: '100+', label: 'Satisfied Clients' },
               { value: '500k', label: 'Sq. Ft. Built' },
               { value: '8+', label: 'Awards Won' },

@@ -25,14 +25,14 @@ const projects: Project[] = [
   {
     id: 3,
     image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80',
-    category: 'Commercial',
+    category: 'Interior',
     title: 'Green Fresh Organic Market',
   },
   {
     id: 4,
     image: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80',
     category: 'Industrial',
-    title: 'Industrial Project',
+    title: 'Industrial Manufacturing Facility',
   },
 ];
 

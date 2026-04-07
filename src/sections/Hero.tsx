@@ -13,7 +13,7 @@ const slides: Slide[] = [
     id: 1,
     image: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1920&q=80',
     title: 'Building the Future',
-    subtitle: 'Nexus Construction is a premier full-service construction firm dedicated to delivering high-quality residential, commercial, and industrial projects.',
+    subtitle: 'Nexus Construction is a premier full-service construction firm dedicated to delivering high-quality residential, commercial, industrial, and interior infrastructure projects.',
   },
   {
     id: 2,
