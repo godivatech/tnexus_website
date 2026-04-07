@@ -74,11 +74,11 @@ const Footer = () => {
             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.1 }}>
               <h4 className="text-xl font-bold mb-6">Services</h4>
               <div className="flex flex-col space-y-4">
-                <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">General Contracting</Link>
-                <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">Design-Build</Link>
-                <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">Commercial Renovation</Link>
-                <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">Civil Engineering</Link>
-                <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">Sustainability Consulting</Link>
+                <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">Residential Construction</Link>
+                <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">Commercial & Retail</Link>
+                <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">Renovation & Modernizing</Link>
+                <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">Industrial Infrastructure</Link>
+                <Link to="/services" className="text-white/60 text-sm hover:text-white transition-colors">Interior Work</Link>
               </div>
             </motion.div>
 

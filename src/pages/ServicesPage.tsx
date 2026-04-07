@@ -4,37 +4,37 @@ import { ArrowRight, ArrowUpRight } from 'lucide-react';
 const services = [
   {
     id: 1,
-    title: 'General Contracting',
-    description: 'Complete project management, subcontractor coordination, and site supervision.',
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80',
+    title: 'Residential Construction',
+    description: 'Custom-built modern homes and building elevation with premium finishes.',
+    image: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=600&q=80',
     number: '01',
   },
   {
     id: 2,
-    title: 'Design-Build',
-    description: 'A streamlined approach where we handle both the design and construction phases.',
-    image: 'https://images.unsplash.com/photo-1503387762-592dee58c460?w=600&q=80',
+    title: 'Commercial & Retail',
+    description: 'High-performance office spaces, petrol pumps, and all types of retail shop infrastructures.',
+    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80',
     number: '02',
   },
   {
     id: 3,
-    title: 'Commercial Renovation',
-    description: 'Modernizing existing spaces to meet 21st-century business needs.',
-    image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80',
+    title: 'Renovation & Modernizing',
+    description: 'Comprehensive renovation and modernizing for existing residential and commercial structures.',
+    image: 'https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?w=600&q=80',
     number: '03',
   },
   {
     id: 4,
-    title: 'Civil Engineering',
-    description: 'Large-scale infrastructure projects including roads, boundary walls, drainage, and utilities.',
-    image: 'https://images.unsplash.com/photo-1574123853831-d42135661605?w=600&q=80',
+    title: 'Industrial Infrastructure',
+    description: 'Specialized industrial facilities, warehouses, and logistics centers with heavy infrastructure.',
+    image: 'https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=600&q=80',
     number: '04',
   },
   {
     id: 5,
-    title: 'Sustainability Consulting',
-    description: 'Implementing LEED standards and eco-friendly premium building materials.',
-    image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80',
+    title: 'Interior Work',
+    description: 'Premium interior solutions from foyer to bedroom with attention to every detail.',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80',
     number: '05',
   },
 ];
@@ -189,10 +189,10 @@ const ServicesPage = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {[
-                  { step: '01', title: 'Design and Planning', description: 'Detailed architectural drawings and structural analysis tailored to your needs.' },
-                  { step: '02', title: 'Material Sourcing', description: 'Procurement of high-quality, premium materials from trusted suppliers.' },
-                  { step: '03', title: 'On-Site Construction', description: 'Efficient and safe construction execution by our expert engineering team.' },
-                  { step: '04', title: 'Final Handover', description: 'Thorough quality audit and project delivery within the committed timeline.' },
+                  { step: '01', title: 'Pre-Construction', description: 'Site analysis, feasibility studies, and detailed cost estimation for a solid project foundation.' },
+                  { step: '02', title: '3D Design & Blueprints', description: 'Translating concepts into accurate blueprints and three-dimensional designs for visual clarity.' },
+                  { step: '03', title: 'General Contracting', description: 'Meticulous on-site management, safety oversight, and rigorous quality control for excellence.' },
+                  { step: '04', title: 'Post-Construction', description: 'Final inspections, detailed walk-throughs, and ongoing warranty support for total satisfaction.' },
                 ].map((item, index) => (
                   <div key={index} className="flex gap-4">
                     <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-primary-foreground font-bold flex-shrink-0">

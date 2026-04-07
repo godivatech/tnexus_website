@@ -1,27 +1,34 @@
 import { motion } from 'framer-motion';
-import { PieChart, ClipboardCheck, PackageCheck } from 'lucide-react';
+import { PieChart, PenTool, ClipboardCheck, PackageCheck } from 'lucide-react';
 
 const processes = [
   {
     id: 1,
     icon: PieChart,
-    title: 'Analysis of the client\'s objectives & needs',
-    description: 'Our approach to project management is grounded in practical experience and prioritises open communication.',
+    title: 'Pre-Construction',
+    description: 'Site analysis, feasibility studies, and detailed cost estimation for a solid project foundation.',
     number: '01',
   },
   {
     id: 2,
-    icon: ClipboardCheck,
-    title: 'Construction project study & structural design',
-    description: 'Together, we identify the construction project\'s total scope and the materials needed for excellence.',
+    icon: PenTool,
+    title: '3D Design & Blueprints',
+    description: 'Translating concepts into accurate blueprints and three-dimensional designs for visual clarity.',
     number: '02',
   },
   {
     id: 3,
-    icon: PackageCheck,
-    title: 'Project execution phase and site installation',
-    description: 'We collaborate closely with you to manage the site and integrate all structural components.',
+    icon: ClipboardCheck,
+    title: 'General Contracting',
+    description: 'Meticulous on-site management, safety oversight, and rigorous quality control for excellence.',
     number: '03',
+  },
+  {
+    id: 4,
+    icon: PackageCheck,
+    title: 'Post-Construction',
+    description: 'Final inspections, detailed walk-throughs, and ongoing warranty support for total satisfaction.',
+    number: '04',
   },
 ];
 
@@ -44,7 +51,7 @@ const Process = () => {
         </motion.div>
 
         {/* Process Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {processes.map((process, index) => (
             <motion.div
               key={process.id}
