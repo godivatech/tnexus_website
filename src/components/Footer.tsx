@@ -87,8 +87,8 @@ const Footer = () => {
               <div>
                 <h4 className="text-xl font-bold mb-6">Office Address</h4>
                 <p className="text-white/60 text-sm leading-relaxed">
-                  Shrinagar, Iyerbungalow, Madurai<br />
-                  Tamil Nadu, India
+                  7, Kodikulam First Street, Surveyor Colony<br />
+                  Madurai - 625007, Tamil Nadu
                 </p>
               </div>
             </motion.div>

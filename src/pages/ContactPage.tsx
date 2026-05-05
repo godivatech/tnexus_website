@@ -82,7 +82,7 @@ const ContactPage = () => {
                 </div>
                 <div className="flex items-center gap-4">
                   <MapPin size={20} className="text-primary" />
-                  <span>SHRINAGAR, IYERBUNGALOW,<br />MADURAI, TAMIL NADU</span>
+                  <span>7, KODIKULAM FIRST STREET, SURVEYOR COLONY,<br />MADURAI - 625007, TAMIL NADU</span>
                 </div>
               </div>
 

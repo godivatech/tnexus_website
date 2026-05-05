@@ -46,7 +46,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-bold mb-1 uppercase">Office Address</h4>
-                  <p className="text-white/60 text-sm">Shrinagar, Iyerbungalow, Madurai</p>
+                  <p className="text-white/60 text-sm">7, Kodikulam First Street, Surveyor Colony, Madurai - 625007</p>
                 </div>
               </div>
 
