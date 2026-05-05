@@ -20,7 +20,14 @@ const founders: Founder[] = [
     id: 1,
     name: 'Balaji Palanivel',
     role: 'Founder & Managing Director',
-    bio: 'With over 15 years of excellence in civil engineering and project management, Balaji leads the visionary growth of Nexus Construction, focusing on sustainable and innovative structural solutions.',
+    bio: `With over 7 years of specialized experience in civil engineering and construction, Balaji Palanivel has established a reputation for excellence and reliability. Operating as both a primary and sub-contractor, he has successfully delivered projects ranging from residential buildings to large-scale commercial infrastructures.
+
+His expertise spans across various sectors, including:
+• Commercial & Retail: Marriage halls, Petrol Bunks, showrooms, and Parking Lots.
+• Residential: High-quality apartments and individual homes.
+• Infrastructure: Prestigious projects like stadiums and sporting areas.
+
+Balaji is committed to delivering structural integrity and innovative solutions with precision and professional standards.`,
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80',
     socials: { facebook: '#', twitter: '#', linkedin: '#', email: 'balaji@nexusconstruction.com' },
   },
@@ -95,7 +102,7 @@ const Founders = () => {
                   <p className="text-accent text-sm font-medium uppercase tracking-wider mb-6">
                     {founder.role}
                   </p>
-                  <p className="text-white/50 text-sm leading-relaxed mb-8 flex-grow">
+                  <p className="text-white/50 text-sm leading-relaxed mb-8 flex-grow whitespace-pre-line">
                     {founder.bio}
                   </p>
 
