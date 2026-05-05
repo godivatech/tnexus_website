@@ -62,17 +62,7 @@ const Testimonials = () => {
             </h2>
           </motion.div>
 
-          <motion.a
-            href="/testimonials"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="btn-primary mt-4 md:mt-0 inline-flex"
-          >
-            More Reviews
-            <ArrowRight size={18} />
-          </motion.a>
+
         </div>
 
         {/* Testimonials Grid */}
