@@ -61,12 +61,7 @@ const Hero = () => {
         </motion.div>
       </AnimatePresence>
 
-      {/* Side Info Bar */}
-      <div className="hidden lg:flex absolute left-0 top-1/2 -translate-y-1/2 flex-col items-center gap-4 py-8 z-20"
-        style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg) translateY(50%)' }}>
-        <span className="text-white/70 text-sm tracking-wider">Call: 6369361053</span>
-        <span className="text-white/70 text-sm tracking-wider">Email: thenexusconstruction@gmail.com</span>
-      </div>
+
 
       {/* Content */}
       <div className="relative z-10 h-full container-tnexus flex items-center">

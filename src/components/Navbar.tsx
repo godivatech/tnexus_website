@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import {
-  Search,
-  Grid3X3,
   Facebook,
   Youtube,
   Linkedin,
@@ -15,7 +13,7 @@ import {
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
+
   const location = useLocation();
 
   useEffect(() => {
@@ -99,15 +97,6 @@ const Navbar = () => {
 
           {/* Right Actions */}
           <div className="flex items-center gap-4">
-            {/* Search Button */}
-            <button
-              onClick={() => setIsSearchOpen(true)}
-              className="w-10 h-10 flex items-center justify-center text-foreground hover:text-primary transition-colors"
-            >
-              <Search size={20} />
-            </button>
-
-            {/* CTA Button */}
             <Link
               to="/contact"
               className="hidden md:flex btn-accent"
@@ -115,11 +104,6 @@ const Navbar = () => {
               Get In Touch
               <ArrowRight size={18} />
             </Link>
-
-            {/* Grid Icon */}
-            <button className="hidden md:flex w-10 h-10 items-center justify-center text-foreground hover:text-primary transition-colors">
-              <Grid3X3 size={20} />
-            </button>
 
             {/* Mobile Menu Button */}
             <button
@@ -159,31 +143,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Search Overlay */}
-      {isSearchOpen && (
-        <div className="fixed inset-0 bg-black/80 z-[60] flex items-center justify-center p-4">
-          <div className="bg-background w-full max-w-2xl p-8 relative">
-            <button
-              onClick={() => setIsSearchOpen(false)}
-              className="absolute top-4 right-4 text-muted-foreground hover:text-foreground"
-            >
-              <X size={24} />
-            </button>
-            <h3 className="text-2xl font-bold mb-4">Search</h3>
-            <div className="flex gap-2">
-              <input
-                type="text"
-                placeholder="Type to search..."
-                className="form-input flex-1"
-                autoFocus
-              />
-              <button className="btn-primary">
-                <Search size={20} />
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+
     </>
   );
 };
