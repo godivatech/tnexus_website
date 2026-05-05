@@ -20,24 +20,29 @@ const founders: Founder[] = [
     id: 1,
     name: 'Balaji Palanivel',
     role: 'Founder & Managing Director',
-    bio: `With over 7 years of specialized experience in civil engineering and construction, Balaji Palanivel has established a reputation for excellence and reliability. Operating as both a primary and sub-contractor, he has successfully delivered projects ranging from residential buildings to large-scale commercial infrastructures.
+    bio: `With 7+ years of experience in civil engineering, Balaji Palanivel has a proven track record in delivering residential and large-scale commercial projects.
 
-His expertise spans across various sectors, including:
-• Commercial & Retail: Marriage halls, Petrol Bunks, showrooms, and Parking Lots.
-• Residential: High-quality apartments and individual homes.
-• Infrastructure: Prestigious projects like stadiums and sporting areas.
+Key Expertise:
+• Commercial: Marriage halls, Petrol Bunks, and showrooms.
+• Residential: Premium apartments and individual homes.
+• Infrastructure: Sporting arenas and stadium projects.
 
-Balaji is committed to delivering structural integrity and innovative solutions with precision and professional standards.`,
+He is dedicated to delivering innovative, high-integrity structural solutions with professional precision.`,
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80',
     socials: { facebook: '#', twitter: '#', linkedin: '#', email: 'balaji@nexusconstruction.com' },
   },
   {
     id: 2,
-    name: 'Anand Subramanian',
-    role: 'Co-Founder & Chief Operations Officer',
-    bio: 'Anand oversees the strategic operations and field execution at Nexus, ensuring every project meets our uncompromising standards of quality and efficiency.',
+    name: 'Siva Prakash',
+    role: 'Co-Founder & Director',
+    bio: `With 7+ years in construction, Siva specializes in delivering high-precision residential and specialized industrial projects.
+
+Expertise:
+• Showrooms & Petrol stations
+• Luxury apartments & villas
+• Sporting facilities & stadiums`,
     image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=80',
-    socials: { facebook: '#', twitter: '#', linkedin: '#', email: 'anand@nexusconstruction.com' },
+    socials: { facebook: '#', twitter: '#', linkedin: '#', email: 'siva@nexusconstruction.com' },
   },
 ];
 
