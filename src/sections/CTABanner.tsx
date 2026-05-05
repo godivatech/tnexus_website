@@ -20,7 +20,7 @@ const CTABanner = () => {
                   OUR PROJECTS
                 </span>
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                  50+
+                  60+
                 </h2>
                 <p className="text-primary-foreground/90 text-lg mb-8 max-w-md">
                   Success Projects

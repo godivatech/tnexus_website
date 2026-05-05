@@ -9,10 +9,9 @@ interface Stat {
 }
 
 const stats: Stat[] = [
-  { id: 1, value: 50, suffix: '+', label: 'Completed Projects' },
-  { id: 2, value: 40, suffix: '+', label: 'Satisfied Clients' },
-  { id: 3, value: 850, suffix: 'k', label: 'Sq. Ft. Built' },
-  { id: 4, value: 6, suffix: '+', label: 'Years Experience' },
+  { id: 1, value: 60, suffix: '+', label: 'Projects' },
+  { id: 2, value: 50, suffix: '+', label: 'Satisfied Clients' },
+  { id: 3, value: 1, suffix: ' Lakh+', label: 'Sq. Ft. Covered' },
 ];
 
 const AnimatedNumber = ({ value, suffix }: { value: number; suffix: string }) => {
@@ -52,7 +51,7 @@ const Statistics = () => {
   return (
     <section className="py-16 bg-muted/20 border-y border-border">
       <div className="container-tnexus">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.id}

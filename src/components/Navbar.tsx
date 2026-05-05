@@ -41,16 +41,16 @@ const Navbar = () => {
       <div className={`bg-dark text-white py-2 transition-all duration-300 ${isScrolled ? 'hidden' : 'hidden md:block'}`}>
         <div className="container-tnexus flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <span className="text-primary">Email:</span>
-            thenexusconstruction@gmail.com
-            <span className="text-primary ml-4">Call:</span>
-            <a href="tel:6369361053" className="hover:text-primary transition-colors">
+            <span className="text-accent font-medium">Email:</span>
+            <span className="text-white/90">thenexusconstruction@gmail.com</span>
+            <span className="text-accent font-medium ml-4">Call:</span>
+            <a href="tel:6369361053" className="text-white/90 hover:text-accent transition-colors">
               6369361053
             </a>
           </div>
           <div className="flex items-center gap-4">
-            <span className="text-primary">Address:</span>
-            <span>SHRINAGAR, IYERBUNGALOW, MADURAI</span>
+            <span className="text-accent font-medium">Address:</span>
+            <span className="text-white/90">7, Kodikulam First Street, Surveyor Colony, Madurai - 625007</span>
           </div>
         </div>
       </div>

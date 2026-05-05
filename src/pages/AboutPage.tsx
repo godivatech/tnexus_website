@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Facebook, Twitter, Linkedin } from 'lucide-react';
+import Founders from '../sections/Founders';
 
 const AboutPage = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -13,11 +14,7 @@ const AboutPage = () => {
     { year: 'In 2024', title: 'Future Ready', image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600&q=80' },
   ];
 
-  const teamMembers = [
-    { name: 'Ramesh Kumar', role: 'Sr. Engineer', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80' },
-    { name: 'Senthil Nathan', role: 'Foreman', image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80' },
-    { name: 'Karthikeyan S', role: 'Sr. Engineer', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80' },
-  ];
+
 
   return (
     <main>
@@ -220,74 +217,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-20 bg-background">
-        <div className="container-tnexus">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
-              <span className="section-subtitle flex items-center gap-2">
-                <span className="w-2 h-2 bg-primary rounded-full"></span>
-                ENGINEER
-              </span>
-              <h2 className="section-title mt-4">The Best industry experts</h2>
-            </motion.div>
-
-            <motion.a
-              href="/team"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="btn-accent mt-4 md:mt-0 inline-flex"
-            >
-              Become a Member
-              <ArrowRight size={18} />
-            </motion.a>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.15 }}
-                className="group relative"
-              >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute top-4 right-4 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <a href="#" className="w-8 h-8 bg-primary flex items-center justify-center text-primary-foreground">
-                      <Facebook size={14} />
-                    </a>
-                    <a href="#" className="w-8 h-8 bg-primary flex items-center justify-center text-primary-foreground">
-                      <Twitter size={14} />
-                    </a>
-                    <a href="#" className="w-8 h-8 bg-primary flex items-center justify-center text-primary-foreground">
-                      <Linkedin size={14} />
-                    </a>
-                  </div>
-                </div>
-                <div className="bg-background p-4 text-center shadow-lg">
-                  <h3 className="font-bold text-foreground">{member.name}</h3>
-                  <p className="text-muted-foreground text-sm">{member.role}</p>
-                  <div className="w-12 h-0.5 bg-primary mx-auto mt-3" />
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Founders />
 
       {/* Achievement Stats */}
       <section className="py-16 bg-muted/30">
@@ -306,12 +236,11 @@ const AboutPage = () => {
             <h2 className="section-title mt-4">Company Achievement</h2>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {[
-              { value: '45+', label: 'Successful Handover' },
-              { value: '100+', label: 'Satisfied Clients' },
-              { value: '500k', label: 'Sq. Ft. Built' },
-              { value: '8+', label: 'Awards Won' },
+              { value: '60+', label: 'Projects' },
+              { value: '50+', label: 'Satisfied Clients' },
+              { value: '1 Lakh', label: 'Sq. Ft. Covered' },
             ].map((stat, index) => (
               <motion.div
                 key={index}
@@ -322,7 +251,7 @@ const AboutPage = () => {
                 className="text-center"
               >
                 <div className="stat-number">{stat.value}</div>
-                <p className="text-muted-foreground mt-2">{stat.label}</p>
+                <p className="text-muted-foreground mt-2 font-medium">{stat.label}</p>
               </motion.div>
             ))}
           </div>

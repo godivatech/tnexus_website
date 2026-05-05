@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import ScrollToTop from './components/ScrollToTop';
+import WhatsAppFloat from './components/WhatsAppFloat';
 
 // Home Page Sections
 import Hero from './sections/Hero';
@@ -12,7 +12,7 @@ import Services from './sections/Services';
 import Process from './sections/Process';
 import Projects from './sections/Projects';
 import CTABanner from './sections/CTABanner';
-import Team from './sections/Team';
+import Founders from './sections/Founders';
 import Testimonials from './sections/Testimonials';
 import Partners from './sections/Partners';
 import Blog from './sections/Blog';
@@ -37,7 +37,7 @@ const HomePage = () => {
       <Process />
       <Projects />
       <CTABanner />
-      <Team />
+      <Founders />
       <Testimonials />
       <Partners />
       <Blog />
@@ -65,7 +65,7 @@ function App() {
           {/* Add more routes as needed */}
         </Routes>
         <Footer />
-        <ScrollToTop />
+        <WhatsAppFloat />
       </div>
     </Router>
   );
