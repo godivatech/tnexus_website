@@ -128,7 +128,7 @@ const Footer = () => {
         <div className="border-t border-white/10">
           <div className="container-tnexus py-6">
             <div className="text-center text-sm text-white/60">
-              <p>© 2026 Nexus Construction. Designed By <a href="https://godivatech.com" className="text-primary hover:underline hover:text-white transition-colors">Godivatech</a>.</p>
+              <p>© 2026 Nexus Construction. Designed By <a href="https://godivatech.com" className="text-accent hover:underline hover:text-white transition-colors">Godivatech</a>.</p>
             </div>
           </div>
         </div>

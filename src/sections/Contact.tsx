@@ -100,7 +100,7 @@ const Contact = () => {
             <div className="bg-primary p-8 md:p-10 clip-diagonal">
               <h3 className="text-2xl font-bold mb-2 text-primary-foreground">Get in Touch</h3>
               <p className="text-primary-foreground/80 text-sm mb-6">
-                Fill out the form below and our project managers will get back to you within 24 hours.
+                Fill out the form below and our project managers will get back to you as soon as possible.
               </p>
 
               <form onSubmit={handleSubmit} className="space-y-4">

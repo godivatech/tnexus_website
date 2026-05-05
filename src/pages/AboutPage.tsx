@@ -83,7 +83,7 @@ const AboutPage = () => {
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-3">Our Mission</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  Our mission is to build the highest quality homes and commercial spaces for our clients. We focus on maintaining a safe workplace, being extremely careful with every technical detail, and using building methods that protect our environment. We want every client to feel that their project was handled with the best care and expertise.
+                  To provide superior construction services by fostering a culture of safety, precision, and sustainable building practices.
                 </p>
                 <div className="w-12 h-0.5 bg-primary mt-4" />
               </div>
@@ -104,7 +104,7 @@ const AboutPage = () => {
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-3">Our Vision</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  We aim to be the most trusted name in the region for turning dream designs into strong, real-world buildings. Our vision is to serve as the perfect bridge between creative architectural ideas and solid structural reality, making sure every project we finish matches the original plan perfectly.
+                  To be the leading regional link between ambitious architectural design and structural reality.
                 </p>
                 <div className="w-12 h-0.5 bg-primary mt-4" />
               </div>
@@ -126,15 +126,15 @@ const AboutPage = () => {
               {[
                 { 
                   title: 'Connectivity', 
-                  description: 'We believe in staying connected with you through honest and open communication. We listen to your needs and keep you updated at every stage of the project so you always know exactly what is happening.' 
+                  description: 'Maintaining transparent communication with clients and partners throughout the project lifecycle.' 
                 },
                 { 
                   title: 'Quality', 
-                  description: 'We never settle for second best. By using the finest materials and working with highly skilled professionals, we make sure that every part of your building is strong, safe, and beautifully finished.' 
+                  description: 'Uncompromising standards in every material and finish to ensure lasting structural integrity.' 
                 },
                 { 
                   title: 'Integrity', 
-                  description: 'Honesty is at the heart of our business. We promise to deliver your project on time and within the agreed budget, doing exactly what we said we would do with total transparency and care.' 
+                  description: 'Delivering on time, within budget, and with total honesty in every interaction.' 
                 },
               ].map((value, index) => (
                 <motion.div

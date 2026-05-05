@@ -23,11 +23,11 @@ const About = () => {
             <h3 className="text-xl md:text-2xl font-bold text-foreground/80 mb-6">
               Leading Construction Projects in Tamil Nadu
             </h3>
-            
+
             {/* Image */}
             <div className="relative mt-8">
-              <img 
-                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80" 
+              <img
+                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80"
                 alt="Construction site overview"
                 className="w-full h-[400px] object-cover"
               />
@@ -52,7 +52,7 @@ const About = () => {
             <p className="text-muted-foreground leading-relaxed mb-8">
               "The Nexus Point"—where client vision meets architectural excellence. From high-rise elevation to specialized petrol pump infrastructure, we handle projects from breaking ground to the final handover.
             </p>
-            
+
             <a href="#services" className="btn-primary inline-flex">
               Discover More
               <ArrowRight size={18} />

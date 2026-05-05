@@ -12,27 +12,27 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1542332213-9b5a5a3fab35?w=800&q=80',
-    category: 'Commercial',
-    title: 'Indian Oil Petrol Pump',
+    image: '/images/projects/madurai/1 paver block.png',
+    category: 'Civil Engineering',
+    title: 'KK Nagar Parking Lot & Paver Blocks',
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80',
-    category: 'Residential',
-    title: 'Residential House Construction',
+    image: '/images/projects/madurai/1 building renevation.png',
+    category: 'Commercial',
+    title: 'Commercial Building Renovation',
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80',
-    category: 'Interior',
-    title: 'Green Fresh Organic Market',
+    image: '/images/projects/pudukkottai/constructing building.PNG',
+    category: 'Residential',
+    title: 'Turnkey Building Construction',
   },
   {
     id: 4,
-    image: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=800&q=80',
-    category: 'Industrial',
-    title: 'Industrial Manufacturing Facility',
+    image: '/images/projects/madurai/3paver blcokk.png',
+    category: 'Civil Engineering',
+    title: '4500 Sq.Ft. Site Development',
   },
 ];
 
