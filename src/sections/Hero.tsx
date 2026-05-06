@@ -46,7 +46,7 @@ const Hero = () => {
   }, [nextSlide]);
 
   return (
-    <section className="relative h-[600px] md:h-[700px] lg:h-[800px] overflow-hidden">
+    <section className="relative w-full aspect-[16/9] min-h-[500px] max-h-[85vh] overflow-hidden">
       {/* Background Slides */}
       <AnimatePresence mode="wait">
         <motion.div
