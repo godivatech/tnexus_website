@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 
@@ -52,29 +53,32 @@ const ServicesPage = () => {
   return (
     <main>
       {/* Page Header */}
-      <section className="relative bg-primary py-24 overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute bottom-0 left-0 w-full h-32 bg-dark opacity-20" style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0)' }}></div>
+      <section className="relative bg-dark py-32 overflow-hidden">
+        {/* Background Patterns */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-accent rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2"></div>
         </div>
-        <div className="container-tnexus relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">Services</h1>
-              <div className="flex items-center gap-2 text-white/80">
-                <span>Home</span>
-                <span>›</span>
-                <span>Services</span>
-              </div>
-            </div>
-            <div className="hidden lg:block">
-              <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80"
-                alt="Services"
-                className="w-full h-[300px] object-cover"
-              />
-            </div>
-          </div>
+        
+        <div className="container-tnexus relative z-10 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+              Our Services
+            </h1>
+            <nav className="flex items-center justify-center gap-3 text-white/50 font-medium text-sm uppercase tracking-widest">
+              <Link to="/" className="hover:text-primary transition-colors">Home</Link>
+              <span className="w-1.5 h-1.5 bg-primary rounded-full"></span>
+              <span className="text-white">Services</span>
+            </nav>
+          </motion.div>
         </div>
+        
+        {/* Decorative line */}
+        <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
       </section>
 
       {/* Services Grid */}
