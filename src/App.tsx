@@ -39,7 +39,7 @@ const HomePage = () => {
       <CTABanner />
       <Founders />
       <Testimonials />
-      <Partners />
+      {/* <Partners /> */}
       <Blog />
       <Contact />
     </main>
