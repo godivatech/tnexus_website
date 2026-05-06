@@ -27,11 +27,10 @@ const About = () => {
             {/* Image */}
             <div className="relative mt-8">
               <img
-                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80"
-                alt="Construction site overview"
-                className="w-full h-[400px] object-cover"
+                src="/images/about/team_on_site.png"
+                alt="Nexus Construction Team on Site"
+                className="w-full h-[400px] object-cover rounded-sm shadow-xl"
               />
-              <div className="absolute bottom-0 right-0 w-32 h-32 bg-primary clip-diagonal"></div>
             </div>
           </motion.div>
 
