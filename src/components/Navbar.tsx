@@ -2,9 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import {
   Facebook,
-  Youtube,
-  Linkedin,
-  Twitter,
+  Instagram,
   ArrowRight
 } from 'lucide-react';
 
@@ -71,13 +69,7 @@ const Navbar = () => {
               <Facebook size={14} />
             </a>
             <a href="#" className="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-              <Youtube size={14} />
-            </a>
-            <a href="#" className="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-              <Linkedin size={14} />
-            </a>
-            <a href="#" className="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300">
-              <Twitter size={14} />
+              <Instagram size={14} />
             </a>
           </div>
 

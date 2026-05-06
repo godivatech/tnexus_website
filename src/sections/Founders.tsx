@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Linkedin, Mail, Twitter } from 'lucide-react';
+import { Facebook, Instagram } from 'lucide-react';
 
 interface Founder {
   id: number;
@@ -9,9 +9,7 @@ interface Founder {
   image: string;
   socials: {
     facebook?: string;
-    twitter?: string;
-    linkedin?: string;
-    email?: string;
+    instagram?: string;
   };
 }
 
@@ -29,7 +27,7 @@ Key Expertise:
 
 He is dedicated to delivering innovative, high-integrity structural solutions with professional precision.`,
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80',
-    socials: { facebook: '#', twitter: '#', linkedin: '#', email: 'balaji@nexusconstruction.com' },
+    socials: { facebook: '#', instagram: '#' },
   },
   {
     id: 2,
@@ -42,7 +40,7 @@ Expertise:
 • Luxury apartments & villas
 • Sporting facilities & stadiums`,
     image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=80',
-    socials: { facebook: '#', twitter: '#', linkedin: '#', email: 'siva@nexusconstruction.com' },
+    socials: { facebook: '#', instagram: '#' },
   },
 ];
 
@@ -113,14 +111,11 @@ const Founders = () => {
 
                   {/* Social Links */}
                   <div className="flex items-center gap-5">
-                    <a href={founder.socials.linkedin} className="text-white/40 hover:text-white transition-colors">
-                      <Linkedin size={20} />
+                    <a href={founder.socials.facebook} className="text-white/40 hover:text-white transition-colors">
+                      <Facebook size={20} />
                     </a>
-                    <a href={founder.socials.twitter} className="text-white/40 hover:text-white transition-colors">
-                      <Twitter size={20} />
-                    </a>
-                    <a href={`mailto:${founder.socials.email}`} className="text-white/40 hover:text-white transition-colors">
-                      <Mail size={20} />
+                    <a href={founder.socials.instagram} className="text-white/40 hover:text-white transition-colors">
+                      <Instagram size={20} />
                     </a>
                   </div>
                 </div>
