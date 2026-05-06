@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Lightbulb, HardHat, Shield, Headphones } from 'lucide-react';
+import { Lightbulb, HardHat, Shield, Clock } from 'lucide-react';
 
 const features = [
   {
@@ -12,7 +12,7 @@ const features = [
     id: 2,
     icon: HardHat,
     title: 'Expert Execution',
-    description: 'Our team of 30+ skilled experts makes sure every job is done safely and correctly.',
+    description: 'Our team of skilled experts makes sure every job is done safely and correctly.',
   },
   {
     id: 3,
@@ -22,7 +22,7 @@ const features = [
   },
   {
     id: 4,
-    icon: Headphones,
+    icon: Clock,
     title: 'On-Time Completion',
     description: "We manage your project carefully to make sure it's finished exactly on time.",
   },

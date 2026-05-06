@@ -18,10 +18,10 @@ const About = () => {
               ABOUT US
             </span>
             <h2 className="section-title mt-4 mb-4 whitespace-nowrap">
-              We work for you <span className="text-primary">since 2020</span>
+              Delivering Quality <span className="text-primary">since 2020</span>
             </h2>
             <h3 className="text-xl md:text-2xl font-bold text-foreground/80 mb-6">
-              Leading Construction Projects in Tamil Nadu
+              Your Trusted Partner for Quality Construction
             </h3>
 
             {/* Image */}
