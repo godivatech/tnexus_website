@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import { ChevronUp, Monitor, ShoppingCart, Ticket } from 'lucide-react';
+import { ChevronUp } from 'lucide-react';
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);

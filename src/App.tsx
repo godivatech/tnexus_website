@@ -15,7 +15,6 @@ import Projects from './sections/Projects';
 import CTABanner from './sections/CTABanner';
 import Founders from './sections/Founders';
 import Testimonials from './sections/Testimonials';
-import Partners from './sections/Partners';
 import Blog from './sections/Blog';
 import Contact from './sections/Contact';
 
