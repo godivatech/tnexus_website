@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Clock, ArrowRight, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, ArrowRight, Facebook, Instagram } from 'lucide-react';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -105,16 +105,16 @@ const ContactPage = () => {
               className="relative"
             >
               <img
-                src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80"
-                alt="Office Building"
+                src="/images/contact/blueprints.png"
+                alt="Nexus Construction Blueprints and Planning"
                 className="w-full h-full object-cover min-h-[400px]"
               />
               <div className="absolute right-4 top-1/2 -translate-y-1/2 flex flex-col gap-2">
-                {[Facebook, Twitter, Instagram, Linkedin].map((Icon, index) => (
+                {[Facebook, Instagram].map((Icon, index) => (
                   <a
                     key={index}
                     href="#"
-                    className="w-10 h-10 bg-white/90 flex items-center justify-center text-dark hover:bg-primary hover:text-primary-foreground transition-all"
+                    className="w-10 h-10 bg-white/90 flex items-center justify-center text-dark hover:bg-primary hover:text-primary-foreground transition-all shadow-md"
                   >
                     <Icon size={16} />
                   </a>
