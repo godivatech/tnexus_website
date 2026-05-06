@@ -11,15 +11,21 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1920&q=80',
-    title: 'Building the Future',
-    subtitle: 'Nexus Construction is a premier full-service construction firm dedicated to delivering high-quality residential, commercial, industrial, and interior infrastructure projects.',
+    image: '/images/hero-section/1_windows_view.png',
+    title: 'Building Excellence across Tamil Nadu',
+    subtitle: 'Nexus Construction delivers high-quality residential, commercial, and industrial infrastructure with professional precision.',
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?w=1920&q=80',
-    title: 'Turning Vision into Reality',
-    subtitle: 'Where client vision meets architectural excellence. Delivering on time, within budget, and with total honesty.',
+    image: '/images/hero-section/2_windows_view.png',
+    title: 'Turning Vision into Structural Reality',
+    subtitle: 'Where architectural excellence meets structural integrity. Delivering projects on time, within budget, and with total honesty.',
+  },
+  {
+    id: 3,
+    image: '/images/hero-section/3_windows_view.png',
+    title: 'Modern Infrastructure Redefined',
+    subtitle: 'Providing end-to-end construction solutions since 2020. We bridge the gap between design and reality with superior craftsmanship.',
   },
 ];
 
@@ -132,10 +138,6 @@ const Hero = () => {
         ))}
       </div>
 
-      {/* Decorative Element */}
-      <div className="absolute bottom-0 left-0 w-32 h-32 z-20">
-        <div className="w-full h-full bg-primary clip-diagonal-reverse"></div>
-      </div>
     </section>
   );
 };
