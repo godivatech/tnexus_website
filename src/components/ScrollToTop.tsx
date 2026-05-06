@@ -30,18 +30,7 @@ const ScrollToTop = () => {
 
   return (
     <>
-      {/* Floating Action Buttons */}
-      <div className="fixed right-6 bottom-24 flex flex-col gap-3 z-50">
-        <button className="floating-btn bg-primary text-primary-foreground hover:bg-primary-hover">
-          <Monitor size={20} />
-        </button>
-        <button className="floating-btn bg-primary text-primary-foreground hover:bg-primary-hover">
-          <ShoppingCart size={20} />
-        </button>
-        <button className="floating-btn bg-blue-600 text-white hover:bg-blue-700">
-          <Ticket size={20} />
-        </button>
-      </div>
+
 
       {/* Scroll to Top Button */}
       <button

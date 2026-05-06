@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
+import ScrollToTop from './components/ScrollToTop';
 
 // Home Page Sections
 import Hero from './sections/Hero';
@@ -49,6 +50,7 @@ const HomePage = () => {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-background">
         <Navbar />
         <Routes>
