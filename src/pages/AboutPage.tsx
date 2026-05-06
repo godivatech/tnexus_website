@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Facebook, Twitter, Linkedin } from 'lucide-react';
 import Founders from '../sections/Founders';
 
 const AboutPage = () => {

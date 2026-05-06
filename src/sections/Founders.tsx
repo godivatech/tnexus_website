@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Facebook, Linkedin, Mail, Twitter } from 'lucide-react';
+import { Linkedin, Mail, Twitter } from 'lucide-react';
 
 interface Founder {
   id: number;

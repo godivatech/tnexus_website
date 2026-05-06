@@ -5,8 +5,7 @@ import {
   Youtube,
   Linkedin,
   Twitter,
-  ArrowRight,
-  X
+  ArrowRight
 } from 'lucide-react';
 
 

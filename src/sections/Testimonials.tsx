@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Star, Quote, ArrowRight } from 'lucide-react';
+import { Star, Quote } from 'lucide-react';
 
 interface Testimonial {
   id: number;
