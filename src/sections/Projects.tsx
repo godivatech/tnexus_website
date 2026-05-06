@@ -26,7 +26,7 @@ const projects: Project[] = [
     id: 3,
     image: '/images/projects/pudukkottai/constructing building.PNG',
     category: 'Residential',
-    title: 'Turnkey Building Construction',
+    title: 'Building Construction',
   },
   {
     id: 4,

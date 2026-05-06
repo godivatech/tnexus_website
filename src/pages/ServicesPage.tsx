@@ -112,12 +112,6 @@ const ServicesPage = () => {
                   <p className="text-muted-foreground text-sm mb-4 relative z-10">
                     {service.description}
                   </p>
-                  <a href="#" className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors relative z-10">
-                    View Details
-                    <span className="w-8 h-8 bg-muted flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-all">
-                      <ArrowUpRight size={14} />
-                    </span>
-                  </a>
                 </div>
               </motion.div>
             ))}
@@ -147,7 +141,7 @@ const ServicesPage = () => {
             </span>
             <h2 className="text-4xl md:text-5xl font-bold text-white">
               Always powering your<br />
-              <span className="text-dark">business since 2020</span>
+              <span className="text-white">business since 2020</span>
             </h2>
           </motion.div>
 

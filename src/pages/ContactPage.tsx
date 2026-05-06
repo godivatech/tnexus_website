@@ -16,15 +16,6 @@ const ContactPage = () => {
     console.log('Form submitted:', formData);
   };
 
-  const offices = [
-    {
-      city: 'Madurai',
-      phone: '6369361053, 9025776659',
-      email: 'thenexusconstruction@gmail.com',
-      hours: 'Mon - Sat 10:00 - 18:00',
-      image: 'https://images.unsplash.com/photo-1590644365607-1c5a519a7a37?w=400&q=80',
-    }
-  ];
 
   return (
     <main>
@@ -72,7 +63,7 @@ const ContactPage = () => {
               <div className="w-16 h-16 bg-primary flex items-center justify-center mb-6 text-primary-foreground">
                 <MapPin size={32} />
               </div>
-              <h3 className="text-2xl font-bold mb-2">Main Offices</h3>
+              <h3 className="text-2xl font-bold mb-2">Main Office</h3>
               <p className="text-white/60 mb-8">Mon - Sat 10:00 - 18:00</p>
 
               <div className="space-y-6">
@@ -121,61 +112,6 @@ const ContactPage = () => {
                 ))}
               </div>
             </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Global Offices */}
-      <section className="py-20 bg-muted/30">
-        <div className="container-tnexus">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-12"
-          >
-            <span className="section-subtitle flex items-center justify-center gap-2">
-              <span className="w-2 h-2 bg-primary rounded-full"></span>
-              BRANCH
-            </span>
-            <h2 className="section-title mt-4">Global Office</h2>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {offices.map((office, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.15 }}
-                className="bg-background p-6 shadow-card hover:shadow-hover transition-shadow"
-              >
-                <h3 className="text-xl font-bold text-foreground mb-4">{office.city}</h3>
-                <div className="space-y-3 text-sm text-muted-foreground mb-6">
-                  <div className="flex items-center gap-3">
-                    <Phone size={14} className="text-primary" />
-                    {office.phone}
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Mail size={14} className="text-primary" />
-                    {office.email}
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <Clock size={14} className="text-primary" />
-                    {office.hours}
-                  </div>
-                </div>
-                <button className="w-full border border-border py-3 flex items-center justify-center gap-2 text-sm font-medium hover:border-primary hover:text-primary transition-all">
-                  View Location
-                  <ArrowRight size={14} />
-                </button>
-                <div className="mt-6 h-32 overflow-hidden">
-                  <img src={office.image} alt={office.city} className="w-full h-full object-cover" />
-                </div>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>
