@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, ChevronLeft, ChevronRight, Play } from 'lucide-react';
+import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface Slide {
   id: number;
@@ -25,7 +25,6 @@ const slides: Slide[] = [
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -36,10 +35,9 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
-    if (!isAutoPlaying) return;
     const interval = setInterval(nextSlide, 6000);
     return () => clearInterval(interval);
-  }, [isAutoPlaying, nextSlide]);
+  }, [nextSlide]);
 
   return (
     <section className="relative h-[600px] md:h-[700px] lg:h-[800px] overflow-hidden">
@@ -100,12 +98,6 @@ const Hero = () => {
                   Explore More
                   <ArrowRight size={18} />
                 </a>
-                <button
-                  className="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-primary-foreground hover:bg-primary-hover transition-colors"
-                  onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-                >
-                  <Play size={20} fill="currentColor" />
-                </button>
               </motion.div>
             </motion.div>
           </AnimatePresence>
