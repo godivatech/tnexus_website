@@ -75,7 +75,7 @@ const AboutPage = () => {
               transition={{ duration: 0.6 }}
               className="flex gap-6"
             >
-              <img
+              <img loading="lazy" decoding="async"
                 src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80"
                 alt="Mission"
                 className="w-40 h-32 object-cover"
@@ -96,7 +96,7 @@ const AboutPage = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="flex gap-6"
             >
-              <img
+              <img loading="lazy" decoding="async"
                 src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=300&q=80"
                 alt="Vision"
                 className="w-40 h-32 object-cover"
@@ -195,7 +195,7 @@ const AboutPage = () => {
             transition={{ duration: 0.4 }}
             className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-background p-8"
           >
-            <img
+            <img loading="lazy" decoding="async"
               src={timelineTabs[activeTab].image}
               alt={timelineTabs[activeTab].title}
               className="w-full h-[350px] object-cover"

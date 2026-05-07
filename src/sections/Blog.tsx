@@ -92,7 +92,7 @@ const Blog = () => {
             >
               {/* Image */}
               <div className="relative h-[250px] overflow-hidden">
-                <img
+                <img loading="lazy" decoding="async"
                   src={post.image}
                   alt={post.title}
                   className="w-full h-full object-cover"

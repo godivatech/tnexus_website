@@ -79,7 +79,7 @@ const Testimonials = () => {
               {/* Header */}
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center gap-4">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={testimonial.image}
                     alt={testimonial.name}
                     className="w-14 h-14 rounded-full object-cover"

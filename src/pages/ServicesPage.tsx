@@ -95,7 +95,7 @@ const ServicesPage = () => {
                 className="group"
               >
                 <div className="relative h-[200px] overflow-hidden">
-                  <img
+                  <img loading="lazy" decoding="async"
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
@@ -122,7 +122,7 @@ const ServicesPage = () => {
       {/* Benefits Section */}
       <section className="py-20 bg-primary relative overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <img loading="lazy" decoding="async"
             src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&q=80"
             alt="Background"
             className="w-full h-full object-cover opacity-20"

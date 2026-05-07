@@ -88,7 +88,7 @@ const Founders = () => {
                 {/* Image Wrapper */}
                 <div className="relative w-full md:w-[280px] h-[380px] overflow-hidden rounded-2xl flex-shrink-0">
                   <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
-                  <img 
+                  <img loading="lazy" decoding="async" 
                     src={founder.image}
                     alt={founder.name}
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"

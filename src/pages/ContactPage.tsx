@@ -95,7 +95,7 @@ const ContactPage = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="relative"
             >
-              <img
+              <img loading="lazy" decoding="async"
                 src="/images/contact/blueprints.png"
                 alt="Nexus Construction Blueprints and Planning"
                 className="w-full h-full object-cover min-h-[400px]"

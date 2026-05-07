@@ -83,7 +83,7 @@ const Team = () => {
               className="team-card group"
             >
               <div className="relative overflow-hidden">
-                <img 
+                <img loading="lazy" decoding="async" 
                   src={member.image}
                   alt={member.name}
                   className="w-full h-[400px] object-cover transition-transform duration-500 group-hover:scale-105"

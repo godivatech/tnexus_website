@@ -108,7 +108,7 @@ const Projects = () => {
               className="flex-shrink-0 w-[300px] md:w-[350px] lg:w-[400px]"
             >
               <div className="project-card h-[450px]">
-                <img
+                <img loading="lazy" decoding="async"
                   src={project.image}
                   alt={project.title}
                   className="w-full h-full object-cover"

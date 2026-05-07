@@ -130,7 +130,7 @@ const Services = () => {
                 transition={{ duration: 0.3 }}
                 className="relative h-[350px] overflow-hidden"
               >
-                <img
+                <img loading="lazy" decoding="async"
                   src={services[activeService].image}
                   alt={services[activeService].title}
                   className="w-full h-full object-cover"

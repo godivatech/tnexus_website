@@ -24,7 +24,7 @@ const Footer = () => {
 
               {/* Logo */}
               <Link to="/" className="flex items-center lg:w-1/4">
-                <img src="/images/logo.png" alt="Nexus Construction Logo" className="h-16 w-auto flex-shrink-0 brightness-0 invert" />
+                <img loading="lazy" decoding="async" src="/images/logo.png" alt="Nexus Construction Logo" className="h-16 w-auto flex-shrink-0 brightness-0 invert" />
               </Link>
 
               {/* Newsletter Text */}

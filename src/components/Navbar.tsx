@@ -60,7 +60,7 @@ const Navbar = () => {
         <div className="container-tnexus flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src="/images/logo.png" alt="Nexus Construction Logo" className="h-20 w-auto" />
+            <img loading="lazy" decoding="async" src="/images/logo.png" alt="Nexus Construction Logo" className="h-20 w-auto" />
           </Link>
 
           {/* Social Icons - Desktop */}
