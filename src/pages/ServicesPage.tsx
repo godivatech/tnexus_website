@@ -5,37 +5,37 @@ import { ArrowRight } from 'lucide-react';
 const services = [
   {
     id: 1,
-    title: 'General Contracting',
-    description: 'Complete project management, subcontractor coordination, and site supervision.',
+    title: 'General Management',
+    description: 'Complete project management, stakeholder coordination, and site supervision for seamless project delivery.',
     image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80',
     number: '01',
   },
   {
     id: 2,
-    title: 'Design-Build',
-    description: 'A streamlined approach where we handle both the design and construction phases.',
+    title: 'Design Build',
+    description: 'A unified approach that combines architectural vision with construction expertise using BIM 3D modeling.',
     image: 'https://images.unsplash.com/photo-1503387762-592dea58ef21?w=600&q=80',
     number: '02',
   },
   {
     id: 3,
-    title: 'Commercial Renovation',
-    description: 'Modernizing existing spaces to meet 21st-century business needs.',
-    image: '/images/projects/madurai/1 building renevation.png',
+    title: 'Residential Infrastructure',
+    description: 'Specializing in high-end villas and residential layouts that prioritize luxury, comfort, and structural excellence.',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80',
     number: '03',
   },
   {
     id: 4,
-    title: 'Civil Engineering',
-    description: 'Large-scale infrastructure projects including roads, boundary walls, and drainage.',
-    image: '/images/projects/madurai/1 paver block.png',
+    title: 'Commercial Infrastructure',
+    description: 'Designing and building state-of-the-art commercial environments like office spaces and showrooms.',
+    image: '/images/projects/madurai/1 building renevation.png',
     number: '04',
   },
   {
     id: 5,
-    title: 'Sustainability Consulting',
-    description: 'Implementing LEED standards and eco-friendly premium building materials.',
-    image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80',
+    title: 'Civil Infrastructure',
+    description: 'Large-scale engineering solutions for essential urban development and utility networks.',
+    image: '/images/projects/madurai/1 paver block.png',
     number: '05',
   },
 ];
@@ -189,7 +189,7 @@ const ServicesPage = () => {
                 {[
                   { step: '01', title: 'Pre-Construction', description: 'Site analysis, feasibility studies, and detailed cost estimation for a solid project foundation.' },
                   { step: '02', title: '3D Design & Blueprints', description: 'Translating concepts into accurate blueprints and three-dimensional designs for visual clarity.' },
-                  { step: '03', title: 'General Contracting', description: 'Meticulous on-site management, safety oversight, and rigorous quality control for excellence.' },
+                  { step: '03', title: 'General Management', description: 'Meticulous on-site management, safety oversight, and rigorous quality control for excellence.' },
                   { step: '04', title: 'Post-Construction', description: 'Final inspections, detailed walk-throughs, and ongoing warranty support for total satisfaction.' },
                 ].map((item, index) => (
                   <div key={index} className="flex gap-4">
