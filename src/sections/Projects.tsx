@@ -13,25 +13,25 @@ const projects: Project[] = [
   {
     id: 1,
     image: '/images/projects/madurai/1 paver block.png',
-    category: 'Civil Engineering',
+    category: 'Civil Infrastructure',
     title: 'KK Nagar Parking Lot & Paver Blocks',
   },
   {
     id: 2,
     image: '/images/projects/madurai/1 building renevation.png',
-    category: 'Commercial',
+    category: 'Commercial Infrastructure',
     title: 'Commercial Building Renovation',
   },
   {
     id: 3,
     image: '/images/projects/pudukkottai/constructing building.PNG',
-    category: 'Residential',
+    category: 'Residential Infrastructure',
     title: 'Building Construction',
   },
   {
     id: 4,
     image: '/images/projects/madurai/3paver blcokk.png',
-    category: 'Civil Engineering',
+    category: 'Civil Infrastructure',
     title: '4500 Sq.Ft. Site Development',
   },
 ];

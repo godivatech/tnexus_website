@@ -19,7 +19,7 @@ const processes = [
   {
     id: 3,
     icon: ClipboardCheck,
-    title: 'General Contracting',
+    title: 'General Management',
     description: 'Meticulous on-site management, safety oversight, and rigorous quality control for excellence.',
     number: '03',
   },
