@@ -26,7 +26,7 @@ Key Expertise:
 • Infrastructure: Sporting arenas and stadium projects.
 
 He is dedicated to delivering innovative, high-integrity structural solutions with professional precision.`,
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80',
+    image: '/images/founders/Balaji Palanivel.png',
     socials: { facebook: '#', instagram: '#' },
   },
   {
@@ -39,7 +39,7 @@ Expertise:
 • Showrooms & Petrol stations
 • Luxury apartments & villas
 • Sporting facilities & stadiums`,
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=80',
+    image: '/images/founders/Siva Prakash.png',
     socials: { facebook: '#', instagram: '#' },
   },
 ];
@@ -91,7 +91,7 @@ const Founders = () => {
                   <img loading="lazy" decoding="async" 
                     src={founder.image}
                     alt={founder.name}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
+                    className="w-full h-full object-cover transition-all duration-700 scale-110 group-hover:scale-100"
                   />
                   {/* Decorative Frame */}
                   <div className="absolute inset-0 border border-white/10 m-3 rounded-xl pointer-events-none z-20"></div>
