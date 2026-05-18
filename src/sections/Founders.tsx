@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import { Facebook, Instagram } from 'lucide-react';
 
 interface Founder {
   id: number;
@@ -7,10 +6,6 @@ interface Founder {
   role: string;
   bio: string;
   image: string;
-  socials: {
-    facebook?: string;
-    instagram?: string;
-  };
 }
 
 const founders: Founder[] = [
@@ -27,7 +22,6 @@ Key Expertise:
 
 He is dedicated to delivering innovative, high-integrity structural solutions with professional precision.`,
     image: '/images/founders/Balaji Palanivel.png',
-    socials: { facebook: '#', instagram: '#' },
   },
   {
     id: 2,
@@ -40,7 +34,6 @@ Expertise:
 • Luxury apartments & villas
 • Sporting facilities & stadiums`,
     image: '/images/founders/Siva Prakash.png',
-    socials: { facebook: '#', instagram: '#' },
   },
 ];
 
@@ -108,16 +101,6 @@ const Founders = () => {
                   <p className="text-white/50 text-sm leading-relaxed mb-8 flex-grow whitespace-pre-line">
                     {founder.bio}
                   </p>
-
-                  {/* Social Links */}
-                  <div className="flex items-center gap-5">
-                    <a href={founder.socials.facebook} className="text-white/40 hover:text-white transition-colors">
-                      <Facebook size={20} />
-                    </a>
-                    <a href={founder.socials.instagram} className="text-white/40 hover:text-white transition-colors">
-                      <Instagram size={20} />
-                    </a>
-                  </div>
                 </div>
               </div>
             </motion.div>
