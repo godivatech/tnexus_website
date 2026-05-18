@@ -76,14 +76,14 @@ const AboutPage = () => {
               className="flex gap-6"
             >
               <img loading="lazy" decoding="async"
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80"
-                alt="Mission"
-                className="w-40 h-32 object-cover"
+                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400&q=80"
+                alt="Our Mission - Active Construction Site"
+                className="w-40 h-32 object-cover rounded-sm shadow-md"
               />
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-3">Our Mission</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  To provide superior construction services by fostering a culture of safety, precision, and sustainable building practices.
+                  To deliver exceptional civil construction, luxury villas, and premium commercial spaces across Tamil Nadu by combining engineering precision, safety, and top-tier craftsmanship.
                 </p>
                 <div className="w-12 h-0.5 bg-primary mt-4" />
               </div>
@@ -97,14 +97,14 @@ const AboutPage = () => {
               className="flex gap-6"
             >
               <img loading="lazy" decoding="async"
-                src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=300&q=80"
-                alt="Vision"
-                className="w-40 h-32 object-cover"
+                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=80"
+                alt="Our Vision - Luxury Modern Villa"
+                className="w-40 h-32 object-cover rounded-sm shadow-md"
               />
               <div>
                 <h3 className="text-xl font-bold text-foreground mb-3">Our Vision</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">
-                  To be the leading regional link between ambitious architectural design and structural reality.
+                  To be Tamil Nadu's premier construction partner, seamlessly turning ambitious architectural designs into structural, income-generating realities and luxurious custom homes.
                 </p>
                 <div className="w-12 h-0.5 bg-primary mt-4" />
               </div>
