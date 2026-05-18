@@ -226,7 +226,7 @@
   }
   
   .scroll-to-top {
-    @apply fixed bottom-6 right-6 w-10 h-10 bg-primary text-primary-foreground 
+    @apply fixed bottom-24 right-8 w-10 h-10 bg-primary text-primary-foreground 
            rounded-sm flex items-center justify-center cursor-pointer 
            transition-all duration-300 hover:bg-primary-hover z-50;
   }
