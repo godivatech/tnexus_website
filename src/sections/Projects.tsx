@@ -13,7 +13,7 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    category: 'Commercial',
+    category: 'Commercial Construction',
     title: 'Commercial Infrastructure',
     media: [
       '/images/projects/Commercial infrastructure/WhatsApp Image 2026-05-15 at 8.55.28 PM.jpeg',
@@ -23,7 +23,7 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    category: 'Showroom',
+    category: 'Showrooms & Shops',
     title: 'Madurai Apple Showroom',
     media: [
       '/images/projects/Madurai Apple showroom/WhatsApp Image 2026-05-15 at 10.17.49 PM.jpeg',
@@ -33,7 +33,7 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    category: 'Retail Store',
+    category: 'Showrooms & Shops',
     title: 'KK Nagar Green Fresh Shop',
     media: [
       '/images/projects/Madurai kk nagar green fresh shop/IMG_5417.MOV',
@@ -54,7 +54,7 @@ const projects: Project[] = [
   },
   {
     id: 5,
-    category: 'Residential',
+    category: 'Residential Construction',
     title: 'Luxury Residential Construction',
     media: [
       '/images/projects/residential construction/WhatsApp Image 2026-05-15 at 8.39.02 PM.jpeg',
@@ -65,8 +65,8 @@ const projects: Project[] = [
   },
   {
     id: 6,
-    category: 'Civil & Extension',
-    title: 'Vacant Site Development & Extension',
+    category: 'Extension of Vacant Land',
+    title: 'Extension: Vacant Land into Commercial',
     media: [
       '/images/projects/vacant and extension/WhatsApp Image 2026-05-15 at 10.51.19 PM.jpeg',
       '/images/projects/vacant and extension/WhatsApp Image 2026-05-15 at 10.51.20 PM.jpeg',
@@ -80,7 +80,7 @@ const projects: Project[] = [
   },
   {
     id: 7,
-    category: 'Sports Infrastructure',
+    category: 'Commercial Construction',
     title: 'TVS School Golf Stadium',
     media: [
       '/images/projects/virapanjan tvs school golf stadium/IMG_0848.MOV',

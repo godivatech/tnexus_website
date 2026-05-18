@@ -50,7 +50,7 @@ const HomePage = () => {
         <CTABanner />
         <Founders />
         <Testimonials />
-        <Blog />
+        {/* <Blog /> */}
         <Contact />
       </Suspense>
     </main>
