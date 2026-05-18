@@ -18,13 +18,14 @@ const Projects = lazy(() => import('./sections/Projects'));
 const CTABanner = lazy(() => import('./sections/CTABanner'));
 const Founders = lazy(() => import('./sections/Founders'));
 const Testimonials = lazy(() => import('./sections/Testimonials'));
-const Blog = lazy(() => import('./sections/Blog'));
+// const Blog = lazy(() => import('./sections/Blog'));
 const Contact = lazy(() => import('./sections/Contact'));
 
 // Page Components - Lazy loaded
 const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ServicesPage = lazy(() => import('./pages/ServicesPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 import UnderDevelopment from './components/UnderDevelopment';
 import { FEATURE_FLAGS } from './config';
 
@@ -75,7 +76,7 @@ function App() {
               element={FEATURE_FLAGS.servicesUnderDevelopment ? <UnderDevelopment pageName="Our Services" /> : <ServicesPage />}
             />
             <Route path="/contact" element={<ContactPage />} />
-            {/* Add more routes as needed */}
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </Suspense>
         <Footer />
