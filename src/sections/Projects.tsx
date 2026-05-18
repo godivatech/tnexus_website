@@ -133,9 +133,8 @@ const ProjectCard = ({ project }: { project: Project }) => {
           return (
             <div
               key={item}
-              className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
-                active ? 'opacity-100' : 'opacity-0'
-              }`}
+              className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${active ? 'opacity-100' : 'opacity-0'
+                }`}
             >
               {isVid ? (
                 <video
@@ -166,9 +165,8 @@ const ProjectCard = ({ project }: { project: Project }) => {
           {project.media.map((_, idx) => (
             <div
               key={idx}
-              className={`h-1 flex-1 rounded-full transition-all duration-300 ${
-                idx === currentIndex ? 'bg-primary' : 'bg-white/40'
-              }`}
+              className={`h-1 flex-1 rounded-full transition-all duration-300 ${idx === currentIndex ? 'bg-primary' : 'bg-white/40'
+                }`}
             />
           ))}
         </div>
