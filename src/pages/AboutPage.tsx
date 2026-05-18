@@ -25,7 +25,7 @@ const AboutPage = () => {
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
           <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-accent rounded-full blur-[120px] translate-y-1/2 -translate-x-1/2"></div>
         </div>
-        
+
         <div className="container-tnexus relative z-10 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -42,7 +42,7 @@ const AboutPage = () => {
             </nav>
           </motion.div>
         </div>
-        
+
         {/* Decorative line */}
         <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
       </section>
@@ -124,17 +124,17 @@ const AboutPage = () => {
             </motion.div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {[
-                { 
-                  title: 'Connectivity', 
-                  description: 'Maintaining transparent communication with clients and partners throughout the project lifecycle.' 
+                {
+                  title: 'Connectivity',
+                  description: 'Maintaining transparent communication with clients and partners throughout the project lifecycle.'
                 },
-                { 
-                  title: 'Quality', 
-                  description: 'Uncompromising standards in every material and finish to ensure lasting structural integrity.' 
+                {
+                  title: 'Quality',
+                  description: 'Uncompromising standards in every material and finish to ensure lasting structural integrity.'
                 },
-                { 
-                  title: 'Integrity', 
-                  description: 'Delivering on time, within budget, and with total honesty in every interaction.' 
+                {
+                  title: 'Integrity',
+                  description: 'Delivering on time, within budget, and with total honesty in every interaction.'
                 },
               ].map((value, index) => (
                 <motion.div
