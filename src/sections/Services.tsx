@@ -34,7 +34,7 @@ const services: Service[] = [
     image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
     heading: 'Premium Residential Solutions',
     description: 'Specializing in high-end villas and residential layouts that prioritize luxury, comfort, and structural excellence.',
-    features: ['Luxury Villas (fully furnished)', 'Structural Integrity villas', 'Modernized Villas cum Commercial'],
+    features: ['Luxury Villas (fully furnished)', 'Structural Integrity Villas', 'Modernized Villas-cum-Commercial'],
   },
   {
     id: 4,

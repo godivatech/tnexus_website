@@ -93,7 +93,7 @@ const projects: Project[] = [
 const ProjectCard = ({ project }: { project: Project }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
-  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
     if (isHovered && project.media.length > 1) {
