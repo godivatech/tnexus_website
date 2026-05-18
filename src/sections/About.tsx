@@ -17,7 +17,7 @@ const About = () => {
               <span className="w-2 h-2 bg-primary rounded-full"></span>
               ABOUT US
             </span>
-            <h2 className="section-title mt-4 mb-4 whitespace-nowrap">
+            <h2 className="text-lg md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold text-foreground leading-tight mt-4 mb-4 whitespace-nowrap">
               Delivering Quality <span className="text-primary">since 2020</span>
             </h2>
             <h3 className="text-xl md:text-2xl font-bold text-foreground/80 mb-6">
