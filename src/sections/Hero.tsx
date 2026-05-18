@@ -43,7 +43,7 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(nextSlide, 6000);
     return () => clearInterval(interval);
-  }, [nextSlide]);
+  }, [currentSlide, nextSlide]);
 
   return (
     <section className="relative w-full aspect-[16/9] min-h-[500px] max-h-[85vh] overflow-hidden">
