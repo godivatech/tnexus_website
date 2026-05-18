@@ -1,40 +1,193 @@
-import { useCallback } from 'react';
+import { useCallback, useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import useEmblaCarousel from 'embla-carousel-react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface Project {
   id: number;
-  image: string;
   category: string;
   title: string;
+  media: string[];
 }
+
 const projects: Project[] = [
   {
     id: 1,
-    image: '/images/projects/madurai/1 paver block.png',
-    category: 'Civil Infrastructure',
-    title: 'KK Nagar Parking Lot & Paver Blocks',
+    category: 'Commercial',
+    title: 'Commercial Infrastructure',
+    media: [
+      '/images/projects/Commercial infrastructure/WhatsApp Image 2026-05-15 at 8.55.28 PM.jpeg',
+      '/images/projects/Commercial infrastructure/WhatsApp Image 2026-05-15 at 8.55.31 PM.jpeg',
+      '/images/projects/Commercial infrastructure/1778858668075.mp4',
+    ]
   },
   {
     id: 2,
-    image: '/images/projects/madurai/1 building renevation.png',
-    category: 'Commercial Infrastructure',
-    title: 'Commercial Building Renovation',
+    category: 'Showroom',
+    title: 'Madurai Apple Showroom',
+    media: [
+      '/images/projects/Madurai Apple showroom/WhatsApp Image 2026-05-15 at 10.17.49 PM.jpeg',
+      '/images/projects/Madurai Apple showroom/WhatsApp Image 2026-05-15 at 10.17.49 PM (1).jpeg',
+      '/images/projects/Madurai Apple showroom/WhatsApp Image 2026-05-15 at 10.17.50 PM.jpeg',
+    ]
   },
   {
     id: 3,
-    image: '/images/projects/pudukkottai/constructing building.PNG',
-    category: 'Residential Infrastructure',
-    title: 'Building Construction',
+    category: 'Retail Store',
+    title: 'KK Nagar Green Fresh Shop',
+    media: [
+      '/images/projects/Madurai kk nagar green fresh shop/IMG_5417.MOV',
+      '/images/projects/Madurai kk nagar green fresh shop/IMG_5140.MOV',
+    ]
   },
   {
     id: 4,
-    image: '/images/projects/madurai/3paver blcokk.png',
-    category: 'Civil Infrastructure',
-    title: '4500 Sq.Ft. Site Development',
+    category: 'Renovation',
+    title: 'Commercial & Residential Renovation',
+    media: [
+      '/images/projects/renovation/WhatsApp Image 2026-05-15 at 10.18.59 PM.jpeg',
+      '/images/projects/renovation/WhatsApp Image 2026-05-15 at 10.19.28 PM.jpeg',
+      '/images/projects/renovation/WhatsApp Image 2026-05-15 at 10.19.29 PM.jpeg',
+      '/images/projects/renovation/WhatsApp Image 2026-05-15 at 10.19.29 PM (1).jpeg',
+      '/images/projects/renovation/WhatsApp Image 2026-05-15 at 10.19.29 PM (2).jpeg',
+    ]
   },
+  {
+    id: 5,
+    category: 'Residential',
+    title: 'Luxury Residential Construction',
+    media: [
+      '/images/projects/residential construction/WhatsApp Image 2026-05-15 at 8.39.02 PM.jpeg',
+      '/images/projects/residential construction/WhatsApp Image 2026-05-15 at 8.41.50 PM.jpeg',
+      '/images/projects/residential construction/WhatsApp Image 2026-05-15 at 8.48.47 PM.jpeg',
+      '/images/projects/residential construction/WhatsApp Image 2026-05-15 at 8.48.48 PM.jpeg',
+    ]
+  },
+  {
+    id: 6,
+    category: 'Civil & Extension',
+    title: 'Vacant Site Development & Extension',
+    media: [
+      '/images/projects/vacant and extension/WhatsApp Image 2026-05-15 at 10.51.19 PM.jpeg',
+      '/images/projects/vacant and extension/WhatsApp Image 2026-05-15 at 10.51.20 PM.jpeg',
+      '/images/projects/vacant and extension/WhatsApp Image 2026-05-15 at 10.51.21 PM.jpeg',
+      '/images/projects/vacant and extension/WhatsApp Image 2026-05-15 at 10.51.22 PM.jpeg',
+      '/images/projects/vacant and extension/WhatsApp Image 2026-05-15 at 10.51.22 PM (1).jpeg',
+      '/images/projects/vacant and extension/WhatsApp Image 2026-05-15 at 10.51.27 PM.jpeg',
+      '/images/projects/vacant and extension/WhatsApp Image 2026-05-15 at 10.51.27 PM (1).jpeg',
+      '/images/projects/vacant and extension/WhatsApp Image 2026-05-15 at 10.51.28 PM.jpeg',
+    ]
+  },
+  {
+    id: 7,
+    category: 'Sports Infrastructure',
+    title: 'TVS School Golf Stadium',
+    media: [
+      '/images/projects/virapanjan tvs school golf stadium/IMG_0848.MOV',
+      '/images/projects/virapanjan tvs school golf stadium/IMG_0871.MOV',
+      '/images/projects/virapanjan tvs school golf stadium/IMG_0931.MOV',
+    ]
+  }
 ];
+
+const ProjectCard = ({ project }: { project: Project }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
+
+  useEffect(() => {
+    if (isHovered && project.media.length > 1) {
+      timerRef.current = setInterval(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % project.media.length);
+      }, 1500);
+    } else {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+      }
+      setCurrentIndex(0);
+    }
+
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+      }
+    };
+  }, [isHovered, project.media.length]);
+
+  const isVideo = (path: string) => {
+    return path.endsWith('.mp4') || path.endsWith('.MOV') || path.endsWith('.mov') || path.endsWith('.webm');
+  };
+
+  return (
+    <div
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className="project-card h-[450px] relative overflow-hidden group cursor-pointer rounded-2xl shadow-lg"
+    >
+      {/* Media Slides */}
+      <div className="w-full h-full relative">
+        {project.media.map((item, idx) => {
+          const active = idx === currentIndex;
+          const isVid = isVideo(item);
+
+          return (
+            <div
+              key={item}
+              className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                active ? 'opacity-100' : 'opacity-0'
+              }`}
+            >
+              {isVid ? (
+                <video
+                  src={item}
+                  muted
+                  loop
+                  playsInline
+                  autoPlay={active}
+                  className="w-full h-full object-cover"
+                />
+              ) : (
+                <img
+                  loading="lazy"
+                  decoding="async"
+                  src={item}
+                  alt={project.title}
+                  className="w-full h-full object-cover transition-transform duration-700 scale-105 group-hover:scale-100"
+                />
+              )}
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Slide Indicators / Navigation dots */}
+      {isHovered && project.media.length > 1 && (
+        <div className="absolute top-4 left-0 right-0 flex justify-center gap-1.5 z-20 px-4">
+          {project.media.map((_, idx) => (
+            <div
+              key={idx}
+              className={`h-1 flex-1 rounded-full transition-all duration-300 ${
+                idx === currentIndex ? 'bg-primary' : 'bg-white/40'
+              }`}
+            />
+          ))}
+        </div>
+      )}
+
+      <div className="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10" />
+
+      {/* Info Container */}
+      <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
+        <span className="inline-block px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full mb-3 shadow-md">
+          {project.category}
+        </span>
+        <h3 className="text-xl font-bold text-white leading-snug drop-shadow-md">
+          {project.title}
+        </h3>
+      </div>
+    </div>
+  );
+};
 
 const Projects = () => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -107,22 +260,7 @@ const Projects = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex-shrink-0 w-[300px] md:w-[350px] lg:w-[400px]"
             >
-              <div className="project-card h-[450px]">
-                <img loading="lazy" decoding="async"
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="project-overlay" />
-                <div className="absolute bottom-0 left-0 right-0 p-6 z-10">
-                  <span className="inline-block px-3 py-1 bg-primary text-primary-foreground text-xs font-medium rounded-full mb-3">
-                    {project.category}
-                  </span>
-                  <h3 className="text-xl font-bold text-white">
-                    {project.title}
-                  </h3>
-                </div>
-              </div>
+              <ProjectCard project={project} />
             </motion.div>
           ))}
         </div>
