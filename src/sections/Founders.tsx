@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Facebook, Instagram } from 'lucide-react';
 
 interface Founder {
   id: number;
@@ -101,6 +102,16 @@ const Founders = () => {
                   <p className="text-white/50 text-sm leading-relaxed mb-8 flex-grow whitespace-pre-line">
                     {founder.bio}
                   </p>
+
+                  {/* Social Icons (Visual Only) */}
+                  <div className="flex items-center gap-5">
+                    <span className="text-white/40 hover:text-white transition-colors cursor-default">
+                      <Facebook size={20} />
+                    </span>
+                    <span className="text-white/40 hover:text-white transition-colors cursor-default">
+                      <Instagram size={20} />
+                    </span>
+                  </div>
                 </div>
               </div>
             </motion.div>
