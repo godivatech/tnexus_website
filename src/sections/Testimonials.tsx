@@ -77,19 +77,12 @@ const Testimonials = () => {
               className="testimonial-card"
             >
               {/* Header */}
-              <div className="flex items-center justify-between mb-6">
-                <div className="flex items-center gap-4">
-                  <img loading="lazy" decoding="async"
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-14 h-14 rounded-full object-cover"
-                  />
-                  <div>
-                    <h4 className="font-bold text-foreground">{testimonial.name}</h4>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                  </div>
+              <div className="flex items-start justify-between mb-6">
+                <div>
+                  <h4 className="font-bold text-foreground">{testimonial.name}</h4>
+                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
                 </div>
-                <span className="text-muted/30 font-bold text-lg">{testimonial.company}</span>
+                <span className="text-muted/30 font-bold text-lg text-right">{testimonial.company}</span>
               </div>
 
               {/* Content */}
