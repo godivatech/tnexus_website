@@ -15,7 +15,7 @@ const services: Service[] = [
   {
     id: 1,
     title: 'General Management',
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80',
+    image: '/images/services/General Management.png',
     heading: 'Professional Project Oversight',
     description: 'Expert management of all construction phases, ensuring seamless coordination between stakeholders and adherence to strict quality standards.',
     features: ['Project Scheduling', 'Stakeholder Management', 'Quality Control Oversight'],
@@ -23,7 +23,7 @@ const services: Service[] = [
   {
     id: 2,
     title: 'Design Build',
-    image: 'https://images.unsplash.com/photo-1503387762-592dea58ef21?w=800&q=80',
+    image: '/images/services/Design Build.png',
     heading: 'Integrated Design & Construction',
     description: 'A unified approach that combines architectural vision with construction expertise for efficient project delivery.',
     features: ['BIM 3D Modeling', 'Unified workflow', 'Visualized 3D walkthrough'],
@@ -31,7 +31,7 @@ const services: Service[] = [
   {
     id: 3,
     title: 'Residential Infrastructure',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+    image: '/images/services/Residential Infrastructure.png',
     heading: 'Premium Residential Solutions',
     description: 'Specializing in high-end villas and residential layouts that prioritize luxury, comfort, and structural excellence.',
     features: ['Luxury Villas (fully furnished)', 'Structural Integrity Villas', 'Modernized Villas-cum-Commercial'],
@@ -39,7 +39,7 @@ const services: Service[] = [
   {
     id: 4,
     title: 'Commercial Infrastructure',
-    image: '/images/projects/madurai/1 building renevation.png',
+    image: '/images/services/Commercial Infrastructure.png',
     heading: 'Modern Business Spaces',
     description: 'Designing and building state-of-the-art commercial environments that support growth and futuristic operational needs.',
     features: ['Office Infrastructure', 'Modernized Showroom', 'Futuristic Parking lots'],
@@ -47,7 +47,7 @@ const services: Service[] = [
   {
     id: 5,
     title: 'Civil Infrastructure',
-    image: '/images/projects/madurai/1 paver block.png',
+    image: '/images/services/Civil Infrastructure.png',
     heading: 'Large-Scale Engineering',
     description: 'Providing robust civil engineering solutions for essential urban development and large-scale utility networks.',
     features: ['Infrastructure Development', 'Residential Layout Development', 'Large Scale of utility Networks'],
