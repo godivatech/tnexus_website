@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Founders from '../sections/Founders';
+import SEO from '../components/SEO';
 
 const AboutPage = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -18,6 +19,12 @@ const AboutPage = () => {
 
   return (
     <main>
+      <SEO 
+        title="About Us | Nexus Construction - Engineering Excellence in Madurai"
+        description="Learn about Nexus Construction, Madurai's leading civil engineering and building contractor. Discover our mission, core values, history, and executive team since 2020."
+        keywords="about Nexus Construction, builders history Madurai, civil engineers Surveyor Colony, custom home builders Madurai, construction company profile, Tamil Nadu contractors"
+        canonical="/about"
+      />
       {/* Page Header */}
       <section className="relative bg-dark py-32 overflow-hidden">
         {/* Background Patterns */}

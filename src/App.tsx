@@ -28,6 +28,7 @@ const ContactPage = lazy(() => import('./pages/ContactPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 import UnderDevelopment from './components/UnderDevelopment';
 import { FEATURE_FLAGS } from './config';
+import SEO from './components/SEO';
 
 // Loading fallback component
 const PageLoader = () => (
@@ -40,6 +41,12 @@ const PageLoader = () => (
 const HomePage = () => {
   return (
     <main>
+      <SEO 
+        title="Nexus Construction | Best Construction Company in Madurai"
+        description="Nexus Construction is a premier construction firm in Madurai, specializing in luxury residential villas, state-of-the-art commercial buildings, civil infrastructure, and premium interior designs across Tamil Nadu."
+        keywords="best construction company in Madurai, builders in Madurai, residential builders Madurai, commercial construction Tamil Nadu, luxury villa builders, civil engineering contractors Madurai, interior design Surveyor Colony, home construction Madurai, budget builders Tamil Nadu"
+        canonical="/"
+      />
       <Hero />
       <Features />
       <Suspense fallback={<PageLoader />}>

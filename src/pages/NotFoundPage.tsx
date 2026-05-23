@@ -1,10 +1,17 @@
 import { motion } from 'framer-motion';
 import { Home, PhoneCall } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const NotFoundPage = () => {
   return (
     <div className="min-h-[80vh] flex items-center justify-center bg-background px-4 py-16">
+      <SEO 
+        title="Page Not Found | Nexus Construction"
+        description="The page you are looking for does not exist. Navigate back to Nexus Construction home for premier building and construction services in Madurai."
+        keywords="page not found, 404 error, Nexus Construction"
+        canonical="/404"
+      />
       <div className="max-w-xl w-full text-center relative">
         {/* Background Glowing Orb Effect */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-primary/5 rounded-full blur-[80px] pointer-events-none -z-10" />

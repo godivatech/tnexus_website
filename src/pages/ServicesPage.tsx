@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const services = [
   {
@@ -52,6 +53,12 @@ const benefits = [
 const ServicesPage = () => {
   return (
     <main>
+      <SEO 
+        title="Our Services | Construction, Design-Build & Infrastructure in Madurai"
+        description="Discover the construction services offered by Nexus Construction: Design-Build project management, luxury residential villa building, commercial office spaces, and civil infrastructure projects across Madurai and Tamil Nadu."
+        keywords="construction services Madurai, civil infrastructure Tamil Nadu, luxury villa builder Madurai, commercial building design, design-build contractors, site management Surveyor Colony"
+        canonical="/services"
+      />
       {/* Page Header */}
       <section className="relative bg-dark py-32 overflow-hidden">
         {/* Background Patterns */}

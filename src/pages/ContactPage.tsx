@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, ArrowRight, Facebook, Instagram } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -19,6 +20,12 @@ const ContactPage = () => {
 
   return (
     <main>
+      <SEO 
+        title="Contact Us | Get a Free Construction Consultation in Madurai"
+        description="Contact Nexus Construction in Madurai, Tamil Nadu. Reach out for a free quote, project estimate, site consultation, or inquiries about residential, commercial, or civil services."
+        keywords="contact builders Madurai, construction company phone, Surveyor Colony office, free estimation construction, builders contact number, Nexus Construction address"
+        canonical="/contact"
+      />
       {/* Page Header */}
       <section className="relative bg-dark py-32 overflow-hidden">
         {/* Background Patterns */}
