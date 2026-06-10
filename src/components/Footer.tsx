@@ -46,6 +46,7 @@ const Footer = () => {
                     placeholder="Enter Your Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
+                    required
                     className="w-full bg-white/5 text-white/80 px-6 py-4 pr-40 rounded-full focus:outline-none placeholder-white/20 text-sm border border-white/10 focus:border-primary/50 transition-colors"
                   />
                   <button type="submit" className="absolute right-1 top-1 bottom-1 bg-primary hover:bg-primary-hover text-primary-foreground px-6 rounded-full font-medium transition-colors flex items-center justify-center gap-2 text-sm">

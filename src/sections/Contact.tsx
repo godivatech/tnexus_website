@@ -118,6 +118,7 @@ const Contact = () => {
                     placeholder="Full Name"
                     value={formData.fullName}
                     onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                    required
                     className="form-input-dark"
                   />
                 </div>
@@ -127,6 +128,7 @@ const Contact = () => {
                     placeholder="Email Address"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    required
                     className="form-input-dark"
                   />
                 </div>
@@ -136,6 +138,7 @@ const Contact = () => {
                     rows={4}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    required
                     className="form-input-dark resize-none"
                   />
                 </div>

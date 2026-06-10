@@ -172,6 +172,7 @@ const ContactPage = () => {
                   placeholder="Full Name"
                   value={formData.fullName}
                   onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                  required
                   className="form-input"
                 />
                 <input
@@ -179,6 +180,7 @@ const ContactPage = () => {
                   placeholder="Email Address"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  required
                   className="form-input"
                 />
                 <input
@@ -186,6 +188,7 @@ const ContactPage = () => {
                   placeholder="Phone"
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  required
                   className="form-input"
                 />
               </div>
@@ -194,6 +197,7 @@ const ContactPage = () => {
                 rows={4}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                required
                 className="form-input resize-none"
               />
               <button type="submit" className="btn-accent w-full justify-center">

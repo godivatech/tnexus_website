@@ -255,6 +255,7 @@ const ServicesPage = () => {
                   className="form-input"
                   value={formData.fullName}
                   onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                  required
                 />
                 <input
                   type="email"
@@ -262,6 +263,7 @@ const ServicesPage = () => {
                   className="form-input"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  required
                 />
                 <input
                   type="text"
@@ -269,6 +271,7 @@ const ServicesPage = () => {
                   className="form-input"
                   value={formData.inquiry}
                   onChange={(e) => setFormData({ ...formData, inquiry: e.target.value })}
+                  required
                 />
                 <textarea
                   placeholder="Write Here..."
@@ -276,6 +279,7 @@ const ServicesPage = () => {
                   className="form-input resize-none"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  required
                 />
                 <button type="submit" className="btn-accent w-full justify-center">
                   Send Message
