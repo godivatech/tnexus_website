@@ -8,7 +8,11 @@ const Footer = () => {
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Subscribed:', email);
+    if (!email.trim()) return;
+    const phoneNumber = '916369361053';
+    const text = `Hello! I would like to subscribe to the Nexus Construction newsletter.\n\nEmail: ${email.trim()}`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
     setEmail('');
   };
 

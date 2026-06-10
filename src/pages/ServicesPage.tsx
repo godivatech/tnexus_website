@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
@@ -51,6 +52,28 @@ const benefits = [
 ];
 
 const ServicesPage = () => {
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    inquiry: '',
+    message: '',
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!formData.fullName.trim()) return;
+    const phoneNumber = '916369361053';
+    const text = `Hello! I have a question regarding Nexus Construction services.\n\nName: ${formData.fullName.trim()}\nEmail: ${formData.email.trim()}\nInquiry: ${formData.inquiry.trim()}\nMessage: ${formData.message.trim()}`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    setFormData({
+      fullName: '',
+      email: '',
+      inquiry: '',
+      message: '',
+    });
+  };
+
   return (
     <main>
       <SEO 
@@ -225,11 +248,35 @@ const ServicesPage = () => {
               <p className="text-muted-foreground text-sm mb-6">
                 Our experts are ready to assist you with your industrial or residential construction needs. Get in touch for a free consultation.
               </p>
-              <form className="space-y-4">
-                <input type="text" placeholder="Full Name" className="form-input" />
-                <input type="email" placeholder="Email Address" className="form-input" />
-                <input type="text" placeholder="Your Inquiry" className="form-input" />
-                <textarea placeholder="Write Here..." rows={3} className="form-input resize-none" />
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  className="form-input"
+                  value={formData.fullName}
+                  onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="form-input"
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                />
+                <input
+                  type="text"
+                  placeholder="Your Inquiry"
+                  className="form-input"
+                  value={formData.inquiry}
+                  onChange={(e) => setFormData({ ...formData, inquiry: e.target.value })}
+                />
+                <textarea
+                  placeholder="Write Here..."
+                  rows={3}
+                  className="form-input resize-none"
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                />
                 <button type="submit" className="btn-accent w-full justify-center">
                   Send Message
                   <ArrowRight size={18} />

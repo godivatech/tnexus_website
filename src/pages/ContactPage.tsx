@@ -14,7 +14,17 @@ const ContactPage = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    if (!formData.fullName.trim()) return;
+    const phoneNumber = '916369361053';
+    const text = `Hello! I would like to get in touch with Nexus Construction.\n\nName: ${formData.fullName.trim()}\nEmail: ${formData.email.trim()}\nPhone: ${formData.phone.trim()}\nMessage: ${formData.message.trim()}`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    setFormData({
+      fullName: '',
+      email: '',
+      phone: '',
+      message: '',
+    });
   };
 
 
