@@ -55,8 +55,8 @@ const HomePage = () => {
         <Statistics />
         {!FEATURE_FLAGS.servicesUnderDevelopment && <Services />}
         <Process />
-        <Projects />
         <OngoingProjects />
+        <Projects />
         <CTABanner />
         <Founders />
         <Testimonials />
