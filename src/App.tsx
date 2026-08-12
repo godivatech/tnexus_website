@@ -15,6 +15,7 @@ const Statistics = lazy(() => import('./sections/Statistics'));
 const Services = lazy(() => import('./sections/Services'));
 const Process = lazy(() => import('./sections/Process'));
 const Projects = lazy(() => import('./sections/Projects'));
+const OngoingProjects = lazy(() => import('./sections/OngoingProjects'));
 const CTABanner = lazy(() => import('./sections/CTABanner'));
 const Founders = lazy(() => import('./sections/Founders'));
 const Testimonials = lazy(() => import('./sections/Testimonials'));
@@ -55,6 +56,7 @@ const HomePage = () => {
         {!FEATURE_FLAGS.servicesUnderDevelopment && <Services />}
         <Process />
         <Projects />
+        <OngoingProjects />
         <CTABanner />
         <Founders />
         <Testimonials />

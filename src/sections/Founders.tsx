@@ -22,7 +22,7 @@ Key Expertise:
 • Infrastructure: Sporting arenas and stadium projects.
 
 He is dedicated to delivering innovative, high-integrity structural solutions with professional precision.`,
-    image: '/images/founders/Balaji Palanivel.png',
+    image: '/images/founders/Balaji Palanivel 2.png',
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ Expertise:
 • Showrooms & Petrol stations
 • Luxury apartments & villas
 • Sporting facilities & stadiums`,
-    image: '/images/founders/Siva Prakash.png',
+    image: '/images/founders/Siva Prakash 2.png',
   },
 ];
 
